@@ -17,6 +17,8 @@ body {
     background: rgb(15, 15, 48);
     color: white;
 
+    font-family: Raleway, sans-serif;
+
     /*to allow 1rem = 10px*/
     font-size: 62.5%;
 }
@@ -78,7 +80,7 @@ i {
   }
 
 /*style navbar with flex box*/  
-  .page-header {
+.page-header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -86,7 +88,15 @@ i {
       padding: 1rem 2rem;
   }
 
-/*footer with link to github*/
+/*intro and h2 headers*/
+
+.intro {
+    font-family: Montserrat Alternates, sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+/*footer that stays at the bottom of the page with link to github*/
 
 footer {
     display: flex;
