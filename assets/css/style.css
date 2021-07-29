@@ -56,12 +56,6 @@ i {
     padding: .5rem;
 }
 
-/*smaller icons*/
-
-.icon-sml {
-    font-size: .8rem;
-}
-
 .nav-icons {
     padding-right: 2rem;
 }
@@ -115,6 +109,23 @@ i {
     width: 80%;
     height: 70vh;
     padding-bottom: 10rem;
+}
+
+/*style buttons and buttons on hover*/
+
+.btn {
+    background: rgba(255,255,255, 0.4);
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+    padding: .8rem 2rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    box-shadow: 1px 1px 5px rgb(231, 225, 189);
+}
+
+.btn:hover {
+    transform: scale(1.03);
 }
 
 /*footer that stays at the bottom of the page with link to github*/
