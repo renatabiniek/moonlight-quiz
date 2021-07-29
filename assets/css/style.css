@@ -21,6 +21,10 @@ body {
     font-size: 62.5%;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
 
 /*remove list style and text decoration from all list items and links*/
 
@@ -81,3 +85,22 @@ i {
       align-items: center;
       padding: 1rem 2rem;
   }
+
+/*footer with link to github*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0.5rem;
+    line-height: 1.2rem;
+}
+
+footer > p {
+    font-size: 1rem;
+}
