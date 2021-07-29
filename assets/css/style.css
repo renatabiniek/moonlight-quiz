@@ -100,6 +100,21 @@ i {
     font-family: Montserrat Alternates, sans-serif;
     font-size: 1.3rem;
     padding: 0.5rem;
+    margin: 5rem 0;
+}
+
+/*main section*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 70vh;
+    padding-bottom: 10rem;
 }
 
 /*footer that stays at the bottom of the page with link to github*/
