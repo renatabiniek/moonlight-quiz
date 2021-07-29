@@ -56,6 +56,12 @@ i {
     padding: .5rem;
 }
 
+/*smaller icons*/
+
+.icon-sml {
+    font-size: .8rem;
+}
+
 .nav-icons {
     padding-right: 2rem;
 }
