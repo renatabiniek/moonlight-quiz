@@ -236,3 +236,33 @@ footer > p {
     }
 }
 
+/*on screens smaller than 365px, reduce the intro and button size*/
+@media screen and (max-width: 365px) {
+
+    .intro {
+        font-size: 1.3rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        width: 15rem;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-icons {
+        padding-right: .2rem;
+    }
+    
+    .nav-icons > li {
+        padding-left: .5rem;
+    }
+}
