@@ -46,8 +46,8 @@ a {
 
 .logo {
     font-family: Montserrat Alternates, sans-serif;
-    font-size: 2rem;
-    padding:0.5rem;
+    font-size: 2.5rem;
+    padding: .5rem;
 }
 
 /*style icons*/
@@ -90,7 +90,7 @@ i {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 2rem 2rem;
   }
 
 /*intro and h2 headers*/
@@ -147,11 +147,12 @@ footer {
     position: absolute;
     bottom: 0;
     padding-bottom: 0.5rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
 }
 
 footer > p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 /*modals*/
@@ -196,5 +197,43 @@ footer > p {
     font-size: 1.2rem;
     list-style-position: inside;
     line-height: 2.2rem;
+}
+
+/*media queries*/
+/*on screens smaller than 700px, reduce the font size to keep logo and links on the same line*/
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .page-header {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    i {
+        font-size: 1.8rem;
+        padding: .2rem;
+    }
+    
+    .nav-icons {
+        padding-right: .5rem;
+    }
+    
+    .nav-icons > li {
+        padding-left: 1rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+    }
 }
 
