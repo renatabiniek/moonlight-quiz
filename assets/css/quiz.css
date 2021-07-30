@@ -6,6 +6,7 @@
     justify-content: space-between;
     text-align: center;
     width: 75%;
+    height: 5rem;
     margin: 1rem auto;
 }
 
@@ -38,7 +39,6 @@
     margin: 1rem auto;
     width: 100%;
     max-width: 50rem;
-
     box-shadow: 1px 1px 5px rgb(231, 225, 189);
 }
 
@@ -67,4 +67,30 @@
         font-size: 2rem;
     }
 
-}    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .answer-container {
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .page-header {
+        padding-bottom: 1rem;
+    }
+
+    .question {
+        font-size: 1.3rem;
+    }
+
+    .progress-item {
+        font-size: 1.3rem;
+    }
+
+    .display-text {
+        font-size: 1.3rem;
+    }
+}
