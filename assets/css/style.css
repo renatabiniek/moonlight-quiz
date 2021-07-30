@@ -16,6 +16,7 @@
 body {
     background: rgb(15, 15, 48);
     color: white;
+    background-image: url("..//images/nightsky.jpg");
 
     font-family: Raleway, sans-serif;
 
@@ -114,7 +115,9 @@ i {
 /*style buttons and buttons on hover*/
 
 .btn {
-    background: rgba(255,255,255, 0.4);
+    background: rgba(255,255,255, 0.6);
+    color: rgb(15, 15, 48);
+    font-weight: bolder;
     border-radius: 5px;
     font-size: 2rem;
     text-align: center;
