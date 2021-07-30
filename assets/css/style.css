@@ -141,10 +141,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10rem;
     width: 100%;
     position: absolute;
     bottom: 0;
+    padding-bottom: 1rem;
 }
 
 footer > p {
