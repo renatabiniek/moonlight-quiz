@@ -1,3 +1,21 @@
 .display-text {
     font-size: 4rem;
 }
+
+.answer-container {
+    display: flex;
+    background: rgba(255,255,255, 0.6);
+    color: rgb(15, 15, 48);
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: .8rem 2rem;
+    margin: 1rem 0;
+    width: 100%;
+    min-width: 50rem;
+    box-shadow: 1px 1px 5px rgb(231, 225, 189);
+}
+
+.answer-container:hover {
+    transform: scale(1.03);
+}
