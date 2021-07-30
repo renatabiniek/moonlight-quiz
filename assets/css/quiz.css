@@ -5,8 +5,8 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    width: 75%;
+    margin: 1rem auto;
 }
 
 .display-text {
@@ -35,9 +35,10 @@
     border-radius: 5px;
     font-size: 2rem;
     padding: 1.5rem 2rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
     width: 100%;
-    min-width: 50rem;
+    max-width: 50rem;
+
     box-shadow: 1px 1px 5px rgb(231, 225, 189);
 }
 
@@ -52,3 +53,18 @@
 .answer-text {
     width: 100%;
 }
+
+/*media queries*/
+/*on screens smaller than 700px*/
+
+@media screen and (max-width: 700px) {
+
+    .question {
+        font-size: 2rem;
+    }
+
+    .display-text {
+        font-size: 2rem;
+    }
+
+}    
