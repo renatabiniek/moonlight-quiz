@@ -14,9 +14,8 @@
 /*body styling*/
 
 body {
-    background: rgb(15, 15, 48);
     color: white;
-    background-image: url("..//images/nightsky.jpg");
+    background: rgb(15, 15, 48) url("..//images/nightsky.jpg");
 
     font-family: Raleway, sans-serif;
 

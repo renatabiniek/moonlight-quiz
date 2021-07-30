@@ -7,8 +7,10 @@
     <meta name="description" content="Night themed trivia quiz to test your knowledge about the moon">
     <meta name="keywords" content="moon, quiz, trivia, Moonlight Quiz, space, questions, answers">
 
-    <!--CSS file link-->
+    <!--CSS file links-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+
 
     <!--favicon link-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
@@ -50,11 +52,35 @@
     <!--MAIN QUIZ INTRO SECTION-->
     
     <div class="main">
-        <h2 class="intro">Did you know this about the moon?</h2>
-
-        <!--buttons to take users to the quiz or the leaderboard-->
-        <a href="quiz.html" class="btn">Let's see!</a>
-        <a href="#" class="btn" id="winners-btn">Moon Experts <i class="fas fa-star" id="icon-sml"></i></a>
+        <div id="quiz-header">
+            <div class="progress-display">
+                <p class="progress-item">Question</p>
+                <div id="progress-bar">
+                    <div id="progress-full"></div>
+                </div>
+            </div>
+            <div class="progress-display">
+                <p class="progress-item">Your score</p>
+                <h1 class="display-text" id="score">0</h1>
+            </div>
+        </div id="question">How big is the Earth's moon?<div>
+            <div class="answer-container">
+                <p class="answer-identifier">A</p>
+                <p class="answer-text" data-choice="1">Answer</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-identifier">B</p>
+                <p class="answer-text" data-choice="2">Answer 2</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-identifier">C</p>
+                <p class="answer-text" data-choice="3">Answer 3</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-identifier">D</p>
+                <p class="answer-text" data-choice="4">Answer 4</p>
+            </div>
+        </div>
     </div>
 
     <!--FOOTER-->
@@ -69,8 +95,9 @@
     <!---FontAwesome script link-->
     <script src="https://kit.fontawesome.com/640b7c3c20.js" crossorigin="anonymous"></script>
 
-    <!--js file link-->
+    <!--js file links-->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/quiz.js"></script>
 
 </body>
 </html>
