@@ -53,7 +53,7 @@ a {
 /*style icons*/
 
 i {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: .5rem;
 }
 
@@ -65,9 +65,13 @@ i {
     padding-left: 1rem;
 }
 
+#icon-sml {
+    font-size: 1.5rem;
+}
+
 /*code to make icons glow on hover taken and adapted from https://www.w3schools.com/howto/howto_css_glowing_text.asp*/
 .glow:hover {
-    font-size: 2rem;
+    font-size: 3rem;
     animation: glow 1s ease-in-out infinite alternate;
 }
 
