@@ -18,7 +18,15 @@
     font-family: Montserrat Alternates, sans-serif;
 }
 
+/*quiz question & h2*/
+
+.question {
+    font-size: 2.5rem;
+    margin-bottom: 1.7rem;
+}
+
 /*container with individual answer for the user to choose from*/
+
 .answer-container {
     display: flex;
     background: rgba(255,255,255, 0.6);
