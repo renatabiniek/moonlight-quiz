@@ -4,6 +4,11 @@ const questionText = document.getElementById("moonq");
 const answerText = document.getElementsByClassName("answer-text");
 const score = document.getElementById("score");
 
+let availableQuestions = quizQuestions;
+let initialScore = 0;
+let questionCount = 0;
+
+
 function startQuiz() {
     
 }
