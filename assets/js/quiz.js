@@ -37,7 +37,15 @@ let quizQuestions = [
         option3: 'Paul Brandt',
         option4: 'William Shakespeare',
         answer: 'William Shakespeare',
-    }
+    },
+    {
+        question: 'Tape the sound of the moon fading at dawn. Give it to your mother to listen to when she’s in sorrow.',
+        option1: 'John Lennon',
+        option2: 'Sylvia Plath',
+        option3: 'Yoko Ono',
+        option4: 'Virginia Woolf',
+        answer: 'Yoko Ono',
+    },
 ]
 
 // Get and declare constant elements from DOM
@@ -78,6 +86,7 @@ function setNewQuestion() {
 /**start the quiz */
 function startQuiz() {
     console.log('quiz started');
+    setNewQuestion();
 }
 
 function selectAnswer() {
