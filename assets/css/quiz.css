@@ -30,7 +30,7 @@
 
 .answer-container {
     display: flex;
-    background: rgba(255,255,255, 0.6);
+    background: rgba(255,255,255, 0.9);
     color: rgb(15, 15, 48);
     font-weight: bolder;
     border-radius: 5px;
