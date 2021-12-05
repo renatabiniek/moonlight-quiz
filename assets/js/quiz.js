@@ -89,6 +89,10 @@ function setNewQuestion() {
         const number = option.dataset.choice;
         option.innerText = currentQuestion['option' + number];
     })
+
+    //remove used question from the available questions list at the random question index
+   let removed = availableQuestions.splice(randomQIndex, 1);
+   console.log(removed);
 }
 
 /**start the quiz */
