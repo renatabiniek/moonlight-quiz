@@ -46,6 +46,14 @@ let quizQuestions = [
         option4: 'Virginia Woolf',
         answer: 'Yoko Ono',
     },
+    {
+        question: "Don't tell me the sky is the limit when there are footprints on the Moon.",
+        option1: 'John Lennon',
+        option2: 'Paul Brandt',
+        option3: 'Buzz Aldrin',
+        option4: 'Neil Armstrong',
+        answer: 'Paul Brandt',
+    },
 ]
 
 // Get and declare constant elements from DOM
