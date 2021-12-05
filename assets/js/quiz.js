@@ -57,9 +57,9 @@ let questionCount = 0;
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
 
-/**start the quiz by displaying a random question from quizQuestions */
-function startQuiz() {
-    console.log('quiz started');
+/**display a random question from quizQuestions*/
+function setNewQuestion() {
+   
     
     //get a random question from quizQuestions and write back to DOM
     const randomQIndex = Math.floor(Math.random() * quizQuestions.length);
@@ -75,8 +75,9 @@ function startQuiz() {
     })
 }
 
-function setNewQuestion() {
-
+/**start the quiz */
+function startQuiz() {
+    console.log('quiz started');
 }
 
 function selectAnswer() {
