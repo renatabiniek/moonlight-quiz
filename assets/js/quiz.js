@@ -45,7 +45,7 @@ let quizQuestions = [
 const questionText = document.getElementById("moonq");
 
 // Create an array from the answers and store in a variable
-const answerText = Array.from(document.getElementsByClassName("answer-text"));
+const options = Array.from(document.getElementsByClassName("answer-text"));
 
 const score = document.getElementById("score");
 
@@ -65,6 +65,14 @@ function startQuiz() {
     const randomQIndex = Math.floor(Math.random() * quizQuestions.length);
     let currentQuestion = quizQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
+
+   
+    //keep track of selected option and write option to DOM 
+
+    options.forEach(function(option) {
+        const number = option.dataset.choice;
+        option.innerText = currentQuestion['option' + number];
+    })
 }
 
 function setNewQuestion() {
