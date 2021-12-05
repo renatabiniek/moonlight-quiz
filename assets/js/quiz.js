@@ -66,6 +66,7 @@ const options = Array.from(document.getElementsByClassName("answer-text"));
 const score = document.getElementById("score");
 
 let availableQuestions = quizQuestions;
+let currentQuestion = {};
 let initialScore = 0;
 let questionCount = 0;
 
@@ -76,10 +77,15 @@ const correctAnswPoints = 20;
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
    
-    
+    if (questionCount >= maxNumberOfQuestions){
+        console.log('max questions reached!')
+    }
+
+    questionCount++;
+
     //get a random question from quizQuestions and write back to DOM
     const randomQIndex = Math.floor(Math.random() * quizQuestions.length);
-    let currentQuestion = quizQuestions[randomQIndex];
+    currentQuestion = quizQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
 
    
@@ -92,7 +98,7 @@ function setNewQuestion() {
 
     //remove used question from the available questions list at the random question index
    let removed = availableQuestions.splice(randomQIndex, 1);
-   console.log(removed);
+   console.log(removed)
 }
 
 /**start the quiz */
