@@ -1,40 +1,6 @@
-// Get and declare constant elements from DOM
-
-const questionText = document.getElementById("moonq");
-
-// Create an array from the answers and store in a variable
-const answerText = Array.from(document.getElementsByClassName("answer-text"));
-
-const score = document.getElementById("score");
-
-let availableQuestions = quizQuestions;
-let initialScore = 0;
-let questionCount = 0;
-
-// Set max. number of questions and score per correct answer for the quiz
-const maxNumberOfQuestions = 5;
-const correctAnswPoints = 20;
-
-
-function startQuiz() {
-    
-}
-
-function setNewQuestion() {
-
-}
-
-function selectAnswer() {
-
-}
-
-function checkAnswer() {
-
-}
-
-function incrementScore() {
-
-}
+document.addEventListener("DOMContentLoaded", function() {
+    console.log('LOADED!')
+})
 
 // define list of questions and answers
 
@@ -72,3 +38,43 @@ let quizQuestions = [
         answer: 'William Shakespeare',
     }
 ]
+
+// Get and declare constant elements from DOM
+
+const questionText = document.getElementById("moonq");
+
+// Create an array from the answers and store in a variable
+const answerText = Array.from(document.getElementsByClassName("answer-text"));
+
+const score = document.getElementById("score");
+
+let availableQuestions = quizQuestions;
+let initialScore = 0;
+let questionCount = 0;
+
+// Set max. number of questions and score per correct answer for the quiz
+const maxNumberOfQuestions = 5;
+const correctAnswPoints = 20;
+
+
+
+function startQuiz() {
+    
+}
+
+function setNewQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
