@@ -1,3 +1,29 @@
+// Get and declare constant elements from DOM
+
+const questionText = document.getElementById("moonq");
+const answerText = document.getElementsByClassName("answer-text");
+const score = document.getElementById("score");
+
+function startQuiz() {
+    
+}
+
+function setNewQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
 // define list of questions and answers
 
 let quizQuestions = [
