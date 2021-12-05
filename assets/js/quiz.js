@@ -1,5 +1,6 @@
+// wait for the DOM content to load
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('LOADED!')
+    startQuiz();
 })
 
 // define list of questions and answers
@@ -56,10 +57,14 @@ let questionCount = 0;
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
 
-
-
+/**start the quiz by displaying a random question from quizQuestions */
 function startQuiz() {
+    console.log('quiz started');
     
+    //get a random question from quizQuestions and write back to DOM
+    const randomQIndex = Math.floor(Math.random() * quizQuestions.length);
+    let currentQuestion = quizQuestions[randomQIndex];
+    questionText.innerText = currentQuestion.question;
 }
 
 function setNewQuestion() {
