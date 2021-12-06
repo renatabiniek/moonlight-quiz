@@ -84,8 +84,9 @@ function setNewQuestion() {
     questionCount++;
 
     //get a random question from quizQuestions and write back to DOM
-    const randomQIndex = Math.floor(Math.random() * quizQuestions.length);
-    currentQuestion = quizQuestions[randomQIndex];
+    const randomQIndex = Math.floor(Math.random() * availableQuestions.length);
+    console.log(randomQIndex);
+    currentQuestion = availableQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
 
    
@@ -97,8 +98,9 @@ function setNewQuestion() {
     })
 
     //remove used question from the available questions list at the random question index
-   let removed = availableQuestions.splice(randomQIndex, 1);
-   console.log(removed)
+   availableQuestions.splice(randomQIndex, 1);
+   console.log(availableQuestions);
+
 }
 
 /**start the quiz */
