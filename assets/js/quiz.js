@@ -105,16 +105,21 @@ function setNewQuestion() {
    options.forEach(function(option) {
        option.addEventListener('click', function highlightCorrect(event) {
            console.log("answer button clicked");
+           //stores info about the target that was clicked
            let selectedOption = event.target;
            console.log(selectedOption);
+           //determines the reference of the data-choice on that target and stores it
            let userSelected = selectedOption.dataset.choice;
            console.log(userSelected);
            console.log(currentQuestion.answer);
 
-           userSelected == currentQuestion.answer ? console.log("match") : console.log("wrong");
+           //compare user's choice and correct answer to the current question and add a class correct/incorrect-answer depending on the result to change the color
 
-
-       });
+           let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
+           console.log(classToAdd);
+           selectedOption.parentElement.classList.add(classToAdd);
+           
+       })
 });
 
 }

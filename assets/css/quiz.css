@@ -46,6 +46,14 @@
     transform: scale(1.03);
 }
 
+.correct-answer {
+    background-color: aquamarine;
+}
+
+.incorrect-answer {
+    background-color: red;
+}
+
 .answer-identifier {
     padding-right: 1rem;
 }
