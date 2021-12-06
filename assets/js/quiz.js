@@ -12,7 +12,7 @@ let quizQuestions = [
         option2: 'Anton Chekhov',
         option3: 'Leo Tolstoy',
         option4: 'Vladimir Nabokov',
-        answer: 'Anton Chekhov',
+        answer: '2',
     },
     {
         question: 'Everyone is a moon, and has a dark side which he never shows to anybody.',
@@ -20,7 +20,7 @@ let quizQuestions = [
         option2: 'Robert Frost',
         option3: 'Mark Twain',
         option4: 'John Lennon',
-        answer: 'Mark Twain',
+        answer: '3',
     },
     {
         question: 'The moon is friend for the lonesome to talk to.',
@@ -28,7 +28,7 @@ let quizQuestions = [
         option2: 'William Shakespeare',
         option3: 'Khalil Gibran',
         option4: 'Paulo Coelho',
-        answer: 'Carl Sandburg',
+        answer: '1',
     },
     {
         question: 'Do not swear by the moon, for she changes constantly. Then your love would also change.',
@@ -36,7 +36,7 @@ let quizQuestions = [
         option2: 'Sylvia Plath',
         option3: 'Paul Brandt',
         option4: 'William Shakespeare',
-        answer: 'William Shakespeare',
+        answer: '4',
     },
     {
         question: 'Tape the sound of the moon fading at dawn. Give it to your mother to listen to when she’s in sorrow.',
@@ -44,7 +44,7 @@ let quizQuestions = [
         option2: 'Sylvia Plath',
         option3: 'Yoko Ono',
         option4: 'Virginia Woolf',
-        answer: 'Yoko Ono',
+        answer: '3',
     },
     {
         question: "Don't tell me the sky is the limit when there are footprints on the Moon.",
@@ -52,7 +52,7 @@ let quizQuestions = [
         option2: 'Paul Brandt',
         option3: 'Buzz Aldrin',
         option4: 'Neil Armstrong',
-        answer: 'Paul Brandt',
+        answer: '2',
     },
 ]
 
@@ -109,6 +109,11 @@ function setNewQuestion() {
            console.log(selectedOption);
            let userSelected = selectedOption.dataset.choice;
            console.log(userSelected);
+           console.log(currentQuestion.answer);
+
+           userSelected == currentQuestion.answer ? console.log("match") : console.log("wrong");
+
+
        });
 });
 
