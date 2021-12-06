@@ -105,9 +105,11 @@ function setNewQuestion() {
    options.forEach(function(option) {
        option.addEventListener('click', function highlightCorrect(event) {
            console.log("answer button clicked");
+
            //stores info about the target that was clicked
            let selectedOption = event.target;
            console.log(selectedOption);
+
            //determines the reference of the data-choice on that target and stores it
            let userSelected = selectedOption.dataset.choice;
            console.log(userSelected);
@@ -118,7 +120,7 @@ function setNewQuestion() {
            let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
            console.log(classToAdd);
            selectedOption.parentElement.classList.add(classToAdd);
-           
+ 
            //remove class color after 2 seconds
 
            setTimeout(removeHighlight, 2000);
@@ -126,6 +128,10 @@ function setNewQuestion() {
            function removeHighlight() {
             selectedOption.parentElement.classList.remove(classToAdd);
            };
+
+            //get another random question
+            setNewQuestion();
+           
        })
 });
 
