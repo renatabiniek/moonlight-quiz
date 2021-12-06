@@ -101,6 +101,17 @@ function setNewQuestion() {
    availableQuestions.splice(randomQIndex, 1);
    console.log(availableQuestions);
 
+   //loop through all options and add event listener for a click and store which option was selected by the user
+   options.forEach(function(option) {
+       option.addEventListener('click', function highlightCorrect(event) {
+           console.log("answer button clicked");
+           let selectedOption = event.target;
+           console.log(selectedOption);
+           let userSelected = selectedOption.dataset.choice;
+           console.log(userSelected);
+       });
+});
+
 }
 
 /**start the quiz */
