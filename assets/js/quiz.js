@@ -119,6 +119,13 @@ function setNewQuestion() {
            console.log(classToAdd);
            selectedOption.parentElement.classList.add(classToAdd);
            
+           //remove class color after 2 seconds
+
+           setTimeout(removeHighlight, 2000);
+
+           function removeHighlight() {
+            selectedOption.parentElement.classList.remove(classToAdd);
+           };
        })
 });
 
