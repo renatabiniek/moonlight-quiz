@@ -85,6 +85,8 @@ function setNewQuestion() {
 
     questionCount++;
 
+    updateQCount();
+
     //get a random question from quizQuestions and write back to DOM
     const randomQIndex = Math.floor(Math.random() * availableQuestions.length);
     console.log(randomQIndex);
@@ -154,12 +156,18 @@ function setNewQuestion() {
 /**start the quiz */
 function startQuiz() {
     console.log('quiz started');
+    initialScore = 0;
+    questionCount = 0;
     setNewQuestion();
 };
 
-/**increment score*/
+/**increment score */
 function incrementScore() {
     let total = parseInt(score.innerText) + correctAnswPoints;
     score.innerText = total;
 };
 
+/**update progress with current question number and total number of question*/
+function updateQCount() {
+    document.getElementById("progress-text").innerText = `Question ${questionCount} of ${maxNumberOfQuestions}`;
+};
