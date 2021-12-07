@@ -100,42 +100,41 @@ function setNewQuestion() {
     //remove used question from the available questions list at the random question index
    availableQuestions.splice(randomQIndex, 1);
    console.log(availableQuestions);
-
-   //loop through all options and add event listener for a click and store which option was selected by the user
-   options.forEach(function(option) {
-       option.addEventListener('click', function highlightCorrect(event) {
-           console.log("answer button clicked");
-
-           //stores info about the target that was clicked
-           let selectedOption = event.target;
-           console.log(selectedOption);
-
-           //determines the reference of the data-choice on that target and stores it
-           let userSelected = selectedOption.dataset.choice;
-           console.log(userSelected);
-           console.log(currentQuestion.answer);
-
-           //compare user's choice and correct answer to the current question and add a class correct/incorrect-answer depending on the result to change the color
-
-           let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
-           console.log(classToAdd);
-           selectedOption.parentElement.classList.add(classToAdd);
- 
-           //remove class color after 2 seconds
-
-           setTimeout(removeHighlight, 2000);
-
-           function removeHighlight() {
-            selectedOption.parentElement.classList.remove(classToAdd);
-           };
-
-            //get another random question
-            setNewQuestion();
-           
-       })
-});
-
 }
+
+ //loop through all options and add event listener for a click and store which option was selected by the user
+ options.forEach(function(option) {
+    option.addEventListener('click', function highlightCorrect(event) {
+        console.log("answer button clicked");
+
+        //stores info about the target that was clicked
+        let selectedOption = event.target;
+        console.log(selectedOption);
+
+        //determines the reference of the data-choice on that target and stores it
+        let userSelected = selectedOption.dataset.choice;
+        console.log(userSelected);
+        console.log(currentQuestion.answer);
+
+        //compare user's choice and correct answer to the current question and add a class correct/incorrect-answer depending on the result to change the color
+
+        let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
+        console.log(classToAdd);
+        selectedOption.parentElement.classList.add(classToAdd);
+
+        //remove class color after 2 seconds
+
+        setTimeout(removeHighlight, 2000);
+
+        function removeHighlight() {
+         selectedOption.parentElement.classList.remove(classToAdd);
+        };
+
+         //get another random question
+         setNewQuestion();
+        
+    })
+});
 
 /**start the quiz */
 function startQuiz() {
