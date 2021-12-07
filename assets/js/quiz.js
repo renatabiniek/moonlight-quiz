@@ -67,6 +67,7 @@ const score = document.getElementById("score");
 
 let availableQuestions = quizQuestions;
 let currentQuestion = {};
+let selectionPossible = true;
 let initialScore = 0;
 let questionCount = 0;
 
@@ -100,12 +101,18 @@ function setNewQuestion() {
     //remove used question from the available questions list at the random question index
    availableQuestions.splice(randomQIndex, 1);
    console.log(availableQuestions);
+
+   selectionPossible = true;
 }
 
  //loop through all options and add event listener for a click and store which option was selected by the user
  options.forEach(function(option) {
     option.addEventListener('click', function highlightCorrect(event) {
         console.log("answer button clicked");
+
+        if (!selectionPossible) return;
+
+        selectionPossible = false;
 
         //stores info about the target that was clicked
         let selectedOption = event.target;
@@ -128,10 +135,9 @@ function setNewQuestion() {
 
         function removeHighlight() {
          selectedOption.parentElement.classList.remove(classToAdd);
+        //get another random question
+        setNewQuestion();
         };
-
-         //get another random question
-         setNewQuestion();
         
     })
 });
