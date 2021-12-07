@@ -131,18 +131,17 @@ function setNewQuestion() {
         selectedOption.parentElement.classList.add(classToAdd);
         selectedOption.parentElement.classList.add("selected");
 
-        //remove class color after 2 seconds
+        //remove class color after 2.5 seconds
 
-        setTimeout(removeHighlight, 2000);
+        setTimeout(removeHighlight, 2500);
 
         function removeHighlight() {
          selectedOption.parentElement.classList.remove(classToAdd);
          selectedOption.parentElement.classList.remove("selected");
-         
+
         //get another random question
         setNewQuestion();
         };
-        
     })
 });
 
@@ -152,15 +151,9 @@ function startQuiz() {
     setNewQuestion();
 }
 
-function selectAnswer() {
-
-}
-
-function checkAnswer() {
-
-}
-
+/**increment score if answer correct */
 function incrementScore() {
 
+    
 }
 
