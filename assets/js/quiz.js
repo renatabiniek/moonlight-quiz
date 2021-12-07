@@ -131,6 +131,12 @@ function setNewQuestion() {
         selectedOption.parentElement.classList.add(classToAdd);
         selectedOption.parentElement.classList.add("selected");
 
+        //if selected answer is correct, increment score by 25 - correct answer points 
+
+        if (classToAdd === "correct-answer") {
+            incrementScore(correctAnswPoints);
+        };
+
         //remove class color after 2.5 seconds
 
         setTimeout(removeHighlight, 2500);
@@ -149,11 +155,11 @@ function setNewQuestion() {
 function startQuiz() {
     console.log('quiz started');
     setNewQuestion();
-}
+};
 
-/**increment score if answer correct */
+/**increment score*/
 function incrementScore() {
-
-    
-}
+    let total = parseInt(score.innerText) + correctAnswPoints;
+    score.innerText = total;
+};
 
