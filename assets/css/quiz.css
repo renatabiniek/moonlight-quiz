@@ -42,7 +42,8 @@
     box-shadow: 1px 1px 5px rgb(231, 225, 189);
 }
 
-.answer-container:hover {
+/*class to be applied with JS when option is selected*/
+.selected {
     transform: scale(1.03);
 }
 

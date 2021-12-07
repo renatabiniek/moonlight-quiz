@@ -62,6 +62,7 @@ const questionText = document.getElementById("moonq");
 
 // Create an array from the answers and store in a variable
 const options = Array.from(document.getElementsByClassName("answer-text"));
+console.log(options);
 
 const score = document.getElementById("score");
 
@@ -128,6 +129,7 @@ function setNewQuestion() {
         let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
         console.log(classToAdd);
         selectedOption.parentElement.classList.add(classToAdd);
+        selectedOption.parentElement.classList.add("selected");
 
         //remove class color after 2 seconds
 
@@ -135,6 +137,8 @@ function setNewQuestion() {
 
         function removeHighlight() {
          selectedOption.parentElement.classList.remove(classToAdd);
+         selectedOption.parentElement.classList.remove("selected");
+         
         //get another random question
         setNewQuestion();
         };
