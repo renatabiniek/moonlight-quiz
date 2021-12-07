@@ -26,6 +26,11 @@
     margin-bottom: 1.7rem;
 }
 
+.progress-full {
+    display: inline;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
 /*container with individual answer for the user to choose from*/
 
 .answer-container {

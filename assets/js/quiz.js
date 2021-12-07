@@ -167,7 +167,12 @@ function incrementScore() {
     score.innerText = total;
 };
 
-/**update progress with current question number and total number of question*/
+/**update progress with current question number and total number of question */
 function updateQCount() {
     document.getElementById("progress-text").innerText = `Question ${questionCount} of ${maxNumberOfQuestions}`;
+};
+
+/**update progress bar */
+function showProgress() {
+
 };
