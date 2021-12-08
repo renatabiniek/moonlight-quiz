@@ -80,7 +80,11 @@ const correctAnswPoints = 20;
 function setNewQuestion() {
    
     if (questionCount == maxNumberOfQuestions){
-        return; //stop showing new questions 
+        //stop showing new questions and show game over page
+        return window.location.assign('/quiz-end.html');
+
+        //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
+
     }
 
     questionCount++;
