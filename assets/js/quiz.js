@@ -86,6 +86,8 @@ function setNewQuestion() {
     questionCount++;
 
     updateQCount();
+    showProgress();
+
 
     //get a random question from quizQuestions and write back to DOM
     const randomQIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -174,5 +176,22 @@ function updateQCount() {
 
 /**update progress bar */
 function showProgress() {
+    let q1 = document.getElementById("q1");
+    let q2 = document.getElementById("q2");
+    let q3 = document.getElementById("q3");
+    let q4 = document.getElementById("q4");
+    let q5 = document.getElementById("q5");
+    
 
-};
+    if (questionCount === 1) {
+        q1.style.visibility = "visible";
+    } else if (questionCount === 2) {
+        q2.style.visibility = "visible";
+    } else if (questionCount === 3) {
+        q3.style.visibility = "visible";
+    } else if (questionCount === 4) {
+        q4.style.visibility = "visible";
+    } else if (questionCount === 5) {
+        q5.style.visibility = "visible";
+    };
+}

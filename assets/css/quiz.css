@@ -26,8 +26,17 @@
     margin-bottom: 1.7rem;
 }
 
-.progress-full {
+#q1 {
+    visibility: hidden;
+}
+
+#q2 {
+    visibility: hidden;
+}
+
+.q-count {
     display: inline;
+    visibility: hidden;
     animation: glow 1s ease-in-out infinite alternate;
 }
 
