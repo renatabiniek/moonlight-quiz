@@ -79,8 +79,8 @@ const correctAnswPoints = 20;
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
    
-    if (questionCount >= maxNumberOfQuestions){
-        console.log('max questions reached!')
+    if (questionCount == maxNumberOfQuestions){
+        return; //stop showing new questions 
     }
 
     questionCount++;
@@ -194,4 +194,5 @@ function showProgress() {
     } else if (questionCount === 5) {
         q5.style.visibility = "visible";
     };
-}
+};
+
