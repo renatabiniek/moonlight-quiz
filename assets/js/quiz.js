@@ -81,7 +81,7 @@ function setNewQuestion() {
    
     if (questionCount == maxNumberOfQuestions){
         //stop showing new questions and show game over page
-        return window.location.assign('/quiz-end.html');
+        return window.location.assign('quiz-end.html');
 
         //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
 
