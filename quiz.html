@@ -51,57 +51,64 @@
         </div>
 
         <!--MAIN QUIZ INTRO SECTION-->
-            <div id="quiz-header">
-                <div class="progress-display">
-                    <p class="progress-item" id="progress-text">Question</p>
-                    <div id="progress-bar">
-                        <div id="q1" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
-                        <div id="q2" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
-                        <div id="q3" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
-                        <div id="q4" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
-                        <div id="q5" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
-                    </div>
-                </div>
-                <div class="progress-display">
-                    <p class="progress-item">Your Score</p>
-                    <h1 class="display-text" id="score">0</h1>
+        <div id="quiz-header">
+            <div class="progress-display">
+                <p class="progress-item" id="progress-text">Question</p>
+                <div id="progress-bar">
+                    <div id="q1" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
+                    <div id="q2" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
+                    <div id="q3" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
+                    <div id="q4" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
+                    <div id="q5" class="q-count"><i class="far fa-moon logo icon-sml"></i></div>
                 </div>
             </div>
-            <div class="main">
-                <div id="quiz">
+            <div class="progress-display">
+                <p class="progress-item">Your Score</p>
+                <h1 class="display-text" id="score">0</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div id="quiz">
                 <h2 class="question" id="moonq"></h2>
-                    <div class="answer-container">
-                        <p class="answer-identifier">A</p>
-                        <p class="answer-text" data-choice="1"></p>
-                    </div>
-                    <div class="answer-container">
-                        <p class="answer-identifier">B</p>
-                        <p class="answer-text" data-choice="2"></p>
-                    </div>
-                    <div class="answer-container">
-                        <p class="answer-identifier">C</p>
-                        <p class="answer-text" data-choice="3"></p>
-                    </div>
-                    <div class="answer-container">
-                        <p class="answer-identifier">D</p>
-                        <p class="answer-text" data-choice="4"></p>
-                    </div>
+                <div class="answer-container">
+                    <p class="answer-identifier">A</p>
+                    <p class="answer-text" data-choice="1"></p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-identifier">B</p>
+                    <p class="answer-text" data-choice="2"></p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-identifier">C</p>
+                    <p class="answer-text" data-choice="3"></p>
+                </div>
+                <div class="answer-container">
+                    <p class="answer-identifier">D</p>
+                    <p class="answer-text" data-choice="4"></p>
                 </div>
             </div>
-        
+        </div>
+
         <!--GAME OVER MODAL-->
-        
-        <div class="modal" id="end-modal">
-            <div>Game over</div>
-            <div class="modal-form"> 
+
+        <div class="end-modal" id="end-modal">
+            <div class="modal-header">
+                <div>Game over</div>
+                <button class="cls-modal" id="modal-btn">&times;</button>
+            </div>
+
+            <div class="modal-form">
                 <form>
                     <input type="text" placeholder="Enter your name">
                     <input type="submit">
                 </form>
             </div>
+
+            <!--overlay-->
+            <div id="overlay"></div>
         </div>
-        
-        
+
+
         <!--FOOTER-->
         <footer>
             <p>created in the moonlight</p>
