@@ -82,8 +82,8 @@ function setNewQuestion() {
 
     if (questionCount === maxNumberOfQuestions) {
 
-        let endOverlay = document.getElementById("overlay");
-        let endModal = document.getElementById("end-modal");
+        const endOverlay = document.getElementById("overlay");
+        const endModal = document.getElementById("end-modal");
 
         endOverlay.style.display = "block";
         endModal.style.display = "block";
