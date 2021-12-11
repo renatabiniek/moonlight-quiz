@@ -93,7 +93,7 @@
 
     border-radius: 5px;
 
-    display:none;
+    /**display:none;**/
 }
 
 .modal-header {
@@ -137,6 +137,12 @@
     padding-top: 5rem;
     display: none;
 }
+
+#username {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
 
 /*media queries*/
 /*on screens smaller than 700px*/
