@@ -80,6 +80,9 @@ function setNewQuestion() {
 
     if (questionCount === maxNumberOfQuestions) {
 
+        //save current score to local storage
+        localStorage.setItem('myScore', score);
+
         //stop showing new questions and show game over page
         return window.location.assign('quiz-end.html');
 
