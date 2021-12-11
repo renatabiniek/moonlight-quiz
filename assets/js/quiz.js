@@ -71,6 +71,8 @@ let selectionPossible = true;
 let initialScore = 0;
 let questionCount = 0;
 
+let myScore = localStorage.getItem('myScore');
+
 // Set max. number of questions and score per correct answer for the quiz
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
@@ -84,7 +86,7 @@ function setNewQuestion() {
         localStorage.setItem('myScore', score);
 
         //stop showing new questions and show game over page
-        return window.location.assign('quiz-end.html');
+        return //window.location.assign('quiz-end.html');
 
         //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
     }
