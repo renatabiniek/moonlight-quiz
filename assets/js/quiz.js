@@ -1,12 +1,11 @@
 // wait for the DOM content to load
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     startQuiz();
 })
 
 // define list of questions and answers
 
-let quizQuestions = [
-    {
+let quizQuestions = [{
         question: "Don't tell me the moon is shining; show me the glint of light on broken glass.",
         option1: 'Fyodor Dostoyevsky',
         option2: 'Anton Chekhov',
@@ -78,13 +77,13 @@ const correctAnswPoints = 20;
 
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
-   
-    if (questionCount == maxNumberOfQuestions){
+
+    if (questionCount === maxNumberOfQuestions) {
+
         //stop showing new questions and show game over page
         return window.location.assign('quiz-end.html');
 
         //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
-
     }
 
     questionCount++;
@@ -99,23 +98,23 @@ function setNewQuestion() {
     currentQuestion = availableQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
 
-   
+
     //keep track of selected option and write option to DOM 
 
-    options.forEach(function(option) {
+    options.forEach(function (option) {
         const number = option.dataset.choice;
         option.innerText = currentQuestion['option' + number];
     })
 
     //remove used question from the available questions list at the random question index
-   availableQuestions.splice(randomQIndex, 1);
-   console.log(availableQuestions);
+    availableQuestions.splice(randomQIndex, 1);
+    console.log(availableQuestions);
 
-   selectionPossible = true;
+    selectionPossible = true;
 }
 
- //loop through all options and add event listener for a click and store which option was selected by the user
- options.forEach(function(option) {
+//loop through all options and add event listener for a click and store which option was selected by the user
+options.forEach(function (option) {
     option.addEventListener('click', function highlightCorrect(event) {
         console.log("answer button clicked");
 
@@ -150,11 +149,11 @@ function setNewQuestion() {
         setTimeout(removeHighlight, 2500);
 
         function removeHighlight() {
-         selectedOption.parentElement.classList.remove(classToAdd);
-         selectedOption.parentElement.classList.remove("selected");
+            selectedOption.parentElement.classList.remove(classToAdd);
+            selectedOption.parentElement.classList.remove("selected");
 
-        //get another random question
-        setNewQuestion();
+            //get another random question
+            setNewQuestion();
         };
     })
 });
@@ -180,12 +179,12 @@ function updateQCount() {
 
 /**update progress bar */
 function showProgress() {
-    let q1 = document.getElementById("q1");
-    let q2 = document.getElementById("q2");
-    let q3 = document.getElementById("q3");
-    let q4 = document.getElementById("q4");
-    let q5 = document.getElementById("q5");
-    
+    const q1 = document.getElementById("q1");
+    const q2 = document.getElementById("q2");
+    const q3 = document.getElementById("q3");
+    const q4 = document.getElementById("q4");
+    const q5 = document.getElementById("q5");
+
 
     if (questionCount === 1) {
         q1.style.visibility = "visible";
@@ -199,4 +198,3 @@ function showProgress() {
         q5.style.visibility = "visible";
     };
 };
-
