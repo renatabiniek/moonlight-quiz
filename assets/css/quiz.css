@@ -139,10 +139,18 @@
 }
 
 #username {
+    margin-top: 1rem;
     padding: .5rem;
     font-size: 1rem;
+    border-radius: 5px;
 }
 
+#save-btn {
+    margin-top: 1rem;
+    padding: .5rem;
+    font-size: 1rem;
+    width:auto;
+}
 
 /*media queries*/
 /*on screens smaller than 700px*/
