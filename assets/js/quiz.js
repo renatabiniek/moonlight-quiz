@@ -261,6 +261,11 @@ saveScoreBtn.addEventListener("click", function() {
 
     getHighScores.push(currentScore);
 
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+    getHighScores.sort(function(a, b) {
+        return b.result - a.result;
+    });
+
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
     console.log("save score");
