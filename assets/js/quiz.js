@@ -266,6 +266,9 @@ saveScoreBtn.addEventListener("click", function() {
         return b.result - a.result;
     });
 
+    //only list 3 highest scores, remove others
+    getHighScores.splice(3);
+
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
     console.log("save score");
