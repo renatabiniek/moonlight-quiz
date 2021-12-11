@@ -244,13 +244,9 @@ const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");
 const myScore = localStorage.getItem("myScore");
 
+/**gets and ranks new scores in local storage */
 
-//when Save button clicked on game over modal current score is saved
-
-
-saveScoreBtn.addEventListener("click", function() {
-
-    //event.preventDefault;
+function rankNewScores () {
     const currentScore = {
         name: playerName.value,
         result: score.innerHTML,
@@ -271,5 +267,8 @@ saveScoreBtn.addEventListener("click", function() {
 
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
-    console.log("save score");
-});
+    console.log("rank new scores ran")
+};
+
+//when Save button clicked on game over modal current score is saved
+saveScoreBtn.addEventListener("click", rankNewScores());
