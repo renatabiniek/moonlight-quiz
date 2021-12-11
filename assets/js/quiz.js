@@ -71,7 +71,6 @@ let selectionPossible = true;
 let initialScore = 0;
 let questionCount = 0;
 
-let myScore = localStorage.getItem('myScore');
 
 // Set max. number of questions and score per correct answer for the quiz
 const maxNumberOfQuestions = 5;
@@ -87,7 +86,6 @@ function setNewQuestion() {
     if (questionCount === maxNumberOfQuestions) {
 
         //show game over modal 
-
 
         endOverlay.style.display = "block";
         endModal.style.display = "block";
@@ -230,8 +228,27 @@ modalBtn.addEventListener("click", function () {
  * close modal when clicked anywhere on window
  */
 window.onclick = function (event) {
-    if (event.target == endOverlay) {
+    if (event.target === endOverlay) {
         endOverlay.style.display = "none";
         endModal.style.display = "none";
     }
 };
+
+//saving scores 
+
+const saveScoreBtn = document.getElementById("save-btn");
+const playerName = document.getElementById("username");
+const finalScore = document.getElementById("final-score")
+let myScore = localStorage.getItem('myScore');
+
+finalScore.innerText = myScore;
+
+//when Save button click on game over modal current score is saved
+saveScoreBtn.addEventListener("click", function () {
+    const currentScore = {
+        name: playerName.value,
+        result: score.innerHTML,
+    };
+
+    console.log(currentScore);
+});
