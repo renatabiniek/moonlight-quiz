@@ -89,6 +89,7 @@ function setNewQuestion() {
 
         endOverlay.style.display = "block";
         endModal.style.display = "block";
+        finalScore.innerText = score.innerText;
 
         //save current score to local storage
         localStorage.setItem('myScore', score);
@@ -238,10 +239,12 @@ window.onclick = function (event) {
 
 const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");
-const finalScore = document.getElementById("final-score")
+
+const finalScore = document.getElementById("final-score");
+
+
 let myScore = localStorage.getItem('myScore');
 
-finalScore.innerText = myScore;
 
 //when Save button click on game over modal current score is saved
 saveScoreBtn.addEventListener("click", function () {
