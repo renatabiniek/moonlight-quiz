@@ -114,7 +114,17 @@
     transform: scale(1.4);
 }
 
+.modal-form {
+    padding: 1rem;
+    width: 300px;
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+}
 
+#save-score {
+    margin-bottom: 1rem;
+}
 
 /*media queries*/
 /*on screens smaller than 700px*/
