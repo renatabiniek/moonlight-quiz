@@ -101,8 +101,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-
+    font-size: 2em;
 }
+
+.cls-modal {
+    background: transparent;
+    color: white;
+    font-size: 2em;
+}
+
+.cls-modal:hover {
+    transform: scale(1.4);
+}
+
 
 
 /*media queries*/
