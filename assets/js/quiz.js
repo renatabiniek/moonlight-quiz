@@ -86,10 +86,7 @@ function setNewQuestion() {
     if (questionCount === maxNumberOfQuestions) {
 
         //show game over modal 
-
-        endOverlay.style.display = "block";
-        endModal.style.display = "block";
-        finalScore.innerText = score.innerText;
+        gameOver();
 
         //save current score to local storage
         localStorage.setItem('myScore', score);
@@ -211,6 +208,13 @@ function showProgress() {
     } else if (questionCount === 5) {
         q5.style.visibility = "visible";
     };
+};
+
+/**show end modal */
+function gameOver() {
+    endOverlay.style.display = "block";
+    endModal.style.display = "block";
+    finalScore.innerText = score.innerText;
 };
 
 /**
