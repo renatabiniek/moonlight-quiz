@@ -181,7 +181,7 @@ function startQuiz() {
 
 /**increment score */
 function incrementScore() {
-    let total = parseInt(scoreValue) + correctAnswPoints;
+    let total = parseInt(score.innerText) + correctAnswPoints;
     score.innerText = total;
 };
 
@@ -248,13 +248,20 @@ const myScore = localStorage.getItem("myScore");
 //when Save button clicked on game over modal current score is saved
 
 
-
-const currentScore = {
-    name: playerName.value,
-    result: score.innerHTML,
-};
-
 saveScoreBtn.addEventListener("click", function () {
+
+    event.preventDefault;
+    const currentScore = {
+        name: playerName.value,
+        result: score.innerHTML,
+    };
+
+    const getHighScores = JSON.parse(localStorage.getItem("highScores"));
+    console.log(getHighScores);
+    let highScores;
+    highScores = getHighScores;
+
+
 
     console.log("save score");
 });
