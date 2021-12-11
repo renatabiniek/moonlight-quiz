@@ -64,6 +64,8 @@ const options = Array.from(document.getElementsByClassName("answer-text"));
 console.log(options);
 
 const score = document.getElementById("score");
+let scoreValue = score.innerText;
+const finalScore = document.getElementById("final-score");
 
 let availableQuestions = quizQuestions;
 let currentQuestion = {};
@@ -89,7 +91,7 @@ function setNewQuestion() {
         gameOver();
 
         //save current score to local storage
-        localStorage.setItem('myScore', score);
+        localStorage.setItem('myScore', JSON.stringify(score.innerText));
 
         //stop showing new questions and show game over page
         return //window.location.assign('quiz-end.html');
@@ -179,7 +181,7 @@ function startQuiz() {
 
 /**increment score */
 function incrementScore() {
-    let total = parseInt(score.innerText) + correctAnswPoints;
+    let total = parseInt(scoreValue) + correctAnswPoints;
     score.innerText = total;
 };
 
@@ -217,9 +219,7 @@ function gameOver() {
     finalScore.innerText = score.innerText;
 };
 
-/**
- * close game over modal when x close button is clicked
- */
+//close game over modal when x close button is clicked
 
 const modalBtn = document.getElementById("modal-btn");
 
@@ -229,9 +229,8 @@ modalBtn.addEventListener("click", function () {
 
 });
 
-/**
- * close modal when clicked anywhere on window
- */
+//close modal when clicked anywhere on window
+
 window.onclick = function (event) {
     if (event.target === endOverlay) {
         endOverlay.style.display = "none";
@@ -243,19 +242,19 @@ window.onclick = function (event) {
 
 const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");
-
-const finalScore = document.getElementById("final-score");
-
-
-let myScore = localStorage.getItem('myScore');
+const myScore = localStorage.getItem("myScore");
 
 
-//when Save button click on game over modal current score is saved
+//when Save button clicked on game over modal current score is saved
+
+
+
+const currentScore = {
+    name: playerName.value,
+    result: score.innerHTML,
+};
+
 saveScoreBtn.addEventListener("click", function () {
-    const currentScore = {
-        name: playerName.value,
-        result: score.innerHTML,
-    };
 
-    console.log(currentScore);
+    console.log("save score");
 });
