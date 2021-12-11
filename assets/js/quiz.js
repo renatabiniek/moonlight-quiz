@@ -77,13 +77,17 @@ let myScore = localStorage.getItem('myScore');
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
 
+
+const endOverlay = document.getElementById("overlay");
+const endModal = document.getElementById("end-modal");
+
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
 
     if (questionCount === maxNumberOfQuestions) {
 
-        const endOverlay = document.getElementById("overlay");
-        const endModal = document.getElementById("end-modal");
+        //show game over modal 
+
 
         endOverlay.style.display = "block";
         endModal.style.display = "block";
@@ -208,4 +212,26 @@ function showProgress() {
     } else if (questionCount === 5) {
         q5.style.visibility = "visible";
     };
+};
+
+/**
+ * close game over modal when x close button is clicked
+ */
+
+const modalBtn = document.getElementById("modal-btn");
+
+modalBtn.addEventListener("click", function () {
+    endOverlay.style.display = "none";
+    endModal.style.display = "none";
+
+});
+
+/**
+ * close modal when clicked anywhere on window
+ */
+window.onclick = function (event) {
+    if (event.target == endOverlay) {
+        endOverlay.style.display = "none";
+        endModal.style.display = "none";
+    }
 };
