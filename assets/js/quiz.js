@@ -91,7 +91,7 @@ function setNewQuestion() {
         gameOver();
 
         //save current score to local storage
-        localStorage.setItem('myScore', JSON.stringify(score.innerText));
+        //localStorage.setItem('myScore', JSON.stringify(score.innerText));
 
         //stop showing new questions and show game over page
         return //window.location.assign('quiz-end.html');
@@ -248,20 +248,20 @@ const myScore = localStorage.getItem("myScore");
 //when Save button clicked on game over modal current score is saved
 
 
-saveScoreBtn.addEventListener("click", function () {
+saveScoreBtn.addEventListener("click", function() {
 
-    event.preventDefault;
+    //event.preventDefault;
     const currentScore = {
         name: playerName.value,
         result: score.innerHTML,
     };
 
-    const getHighScores = JSON.parse(localStorage.getItem("highScores"));
+    const getHighScores = JSON.parse(localStorage.getItem("highScores")) || [];
     console.log(getHighScores);
-    let highScores;
-    highScores = getHighScores;
 
+    getHighScores.push(currentScore);
 
+    localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
     console.log("save score");
 });
