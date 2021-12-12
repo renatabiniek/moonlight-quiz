@@ -103,7 +103,7 @@ The footer includes information about the site owner, including a link to the Gi
 
 * **Colour scheme**
 
-I wanted to make the page consistent with the mooon theme, so I decided on dark colour scheme, that would imitate the night sky.
+I wanted to make the page consistent with the moon theme, so I decided on dark colour scheme, that would imitate the night sky.
 That also give the site an elegant, minimal look, and eliminates distractions for the user.
 
 The colors used are:
@@ -114,7 +114,7 @@ The colors used are:
 
 * shades of gold - for glow effect rgb(255,215,0) & (231, 225, 189)
 
-* dark blue - rgb(16, 46, 74) for modal backround
+* dark blue - rgb(16, 46, 74) for modal background
  
 The blues were derived from the background image colours using [Eye Dropper](https://eyedropper.org/).
 
@@ -151,7 +151,7 @@ Sans-serif is the fallback option.
 
 ### Existing Features
 
-Exsting features include:
+Existing features include:
 
 * **Navigation section**
 
@@ -171,7 +171,7 @@ Two icons have been placed on the right hand side (with the same glow effect) to
 
 ![Navigation elements](assets/images/nav-elements.png)
 
-Modal opens whe user clicks the **?** icon. It can be closed with **X** icon inside the modal.
+Modal opens when user clicks the **?** icon. It can be closed with **X** icon inside the modal.
 
 ![Modal](assets/images/info-modal.png)
 
@@ -387,7 +387,7 @@ This was again my own erorr and was resolved with toggle visibitlity from w3scho
 
 * Error 404 page showed when I deployed the page in GitHub. This was due to an absolute file path that I used. It was fixed when I changed it to relative.
 
-  * **Known**:
+* **Known**:
 
 * Not a bug, but I realised late in the project that having multiple files isn't as helpful as I thought it would be. Instead of helping me separate specific aspects of the project, it made it more difficult to refer to specific values and elements. This will be corrected in the future.
 
@@ -406,7 +406,7 @@ Credits are due to:
 
 * The Code Institute materials with the support of tutorial materials on [w3schools](https://www.w3schools.com/), [MDN Web Docs](https://developer.mozilla.org/en-US/) and posts on [stackoverflow](https://stackoverflow.com/) were used to create this site. 
 
-* I reviewed similar projects of my fellow students for reference to better understand the practical use of JS concepts for this concept [zokam1411]https://github.com/zokam1411/milestone-project-2 and [roomacarthur]https://github.com/roomacarthur/the-tipsy-quiz
+* I reviewed similar projects of my fellow students for reference to better understand the practical use of JS concepts for this concept [zokam1411](https://github.com/zokam1411/milestone-project-2) and [roomacarthur](https://github.com/roomacarthur/the-tipsy-quiz)
 
 * [This blog post](https://chris.beams.io/posts/git-commit/) was used for recommendation on best format of git commit messages
 
@@ -424,4 +424,6 @@ Massive thank you to:
 
 * The wonderfully helpful and friendly Slack community where I often looked for help
 * Tutors at Code Institute for their extended support 
-* My partner who took over running the houshold and let me work on this project
+* My partner who took over running the household and let me work on this project
+
+[BACK TO TOP](#Table-ofContents)
