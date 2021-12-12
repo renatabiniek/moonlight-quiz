@@ -243,6 +243,11 @@ footer > p {
     font-size: 1.3rem;
 }
 
+.intro {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
 }
 
 /*on screens smaller than 365px, reduce the intro and button size*/
