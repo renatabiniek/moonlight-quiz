@@ -426,4 +426,4 @@ Massive thank you to:
 * Tutors at Code Institute for their extended support 
 * My partner who took over running the household and let me work on this project
 
-[BACK TO TOP](#Table-ofContents)
+[BACK TO TOP](#Table-of-Contents)
