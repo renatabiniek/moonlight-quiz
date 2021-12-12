@@ -19,6 +19,10 @@
     font-family: Montserrat Alternates, sans-serif;
 }
 
+.icon-sml {
+    font-size: 1.5rem;
+}
+
 /*quiz question & h2*/
 
 .question {
@@ -181,7 +185,7 @@
     }
 
     .question {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .progress-item {
@@ -191,4 +195,28 @@
     .display-text {
         font-size: 1.3rem;
     }
+
+    .icon-sml {
+        font-size: 1rem;
+    }
+}
+
+/*on screens smaller than 365px*/
+@media screen and (max-width: 365px) {
+
+    .question {
+        font-size: 1rem;
+    }
+
+    .answer-container {
+        font-size: 1rem;
+    }
+    
+    .progress-item {
+        font-size: 1rem;
+    }
+
+
+
+
 }

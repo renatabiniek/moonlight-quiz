@@ -237,6 +237,14 @@ footer > p {
     }
 }
 
+@media screen and (max-width: 550px) {
+
+.logo {
+    font-size: 1.3rem;
+}
+
+}
+
 /*on screens smaller than 365px, reduce the intro and button size*/
 @media screen and (max-width: 365px) {
 
