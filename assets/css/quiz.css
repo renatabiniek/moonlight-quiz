@@ -130,6 +130,16 @@
     text-align: center;
 }
 
+#play-again {
+    margin-top: 2rem;
+}
+
+#play-again,
+#go-home {
+    font-size: 1.3rem;
+    width: 15rem;
+}
+
 #save-score {
     margin-bottom: 1rem;
 }
@@ -161,6 +171,7 @@
     font-size: 1rem;
     width: auto;
 }
+
 
 /*media queries*/
 /*on screens smaller than 700px*/
