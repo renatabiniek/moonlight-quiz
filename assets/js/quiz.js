@@ -238,6 +238,21 @@ window.onclick = function (event) {
     }
 };
 
+//end game actions
+
+const playAgainBtn = document.getElementById("play-again");
+const goHomeBtn = document.getElementById("go-home");
+
+//takes user back to quiz start
+playAgainBtn.addEventListener("click", function() {
+    return location.assign("/quiz.html")
+});
+
+
+goHomeBtn.addEventListener("click", function() {
+    return location.assign("/index.html")
+});
+
 //saving scores 
 
 const saveScoreBtn = document.getElementById("save-btn");
