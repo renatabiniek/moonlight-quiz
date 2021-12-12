@@ -119,20 +119,18 @@ The colors used are:
 * dark blue - rgb(16, 46, 74) for modal backround
  
 The blues were derived from the background image colours using [Eye Dropper](https://eyedropper.org/).
-
 <br>
 
 * **Typography**
 
     The fonts were sourced from [Google Fonts](https://fonts.google.com/)
 
-Two fonts were selected for this project:
+    Two fonts were selected for this project:
 
 * 'Montserrat Alternates', sans-serif - for logo and intro elements, with sans-serif as a fallback font in case the original font family isn't imported correctly for some reason. The font design is fun but still very readable, I felt it tied in well with the theme of the quiz.
 
 * 'Raleway', sans-serif - for body text. The font is elegant, popular and clean, which ensure that questions and answers of the quiz will be easy to read.
 Sans-serif is the fallback option.  
-
 <br> 
 
 * **Imagery**
@@ -142,7 +140,6 @@ Sans-serif is the fallback option.
     It was sourced from [Unsplash](https://unsplash.com/).
     
     Moon & star icons from [Font Awesome](https://fontawesome.com/) were used in logo, progress bar and on the high scores button to ensure a cohesive feel of the site.
-
 <br>
 
 ## Features
@@ -152,16 +149,50 @@ Sans-serif is the fallback option.
 
 Exsting features include:
 
-* **Logo section**
+* **Navigation section**
+
+In the typical navigation section of the site, I have added a fun logo that glows when the player hovers over it, and that also takes the player to the home page from any stage of the quiz.
+
+![Navigation](assets/images/nav-menu.png)
+
+Logo:
+
+![Logo](assets/images/logo.png)
+
+Logo on hover:
+
+![Glowing logo](assets/images/logo-glow.png)
+
+Two icons have been placed on the right hand side (with the same glow effect) to allow the player to easily access information about the quiz game and contact the site owner.
+
+![Navigation elements](assets/images/nav-elements.png)
+
+Modal opens whe user clicks the **?** icon. It can be closed with **X** icon inside the modal.
+
+![Modal](assets/images/info-modal.png)
+
 * **Home page with call to action**
-* **Game rules modal**
+
+On the home page, the user can start the quiz by pressing the **Let's see!** button.
+
+![Call to action](assets/images/game-options.png)
+
+Moon Experts button doesn't currently take the users to the score board but this will be implemented in the future.
+
+* **Footer**
+
+Minimal footer is placed conventionally at the bottom of the page.
+For consistency, it has been added to both, home and quiz pages.
+It includes info about the site's author and a link to the GitHub repository, with the GitHub icon that has the same glow on hover effect.
+The link opens in a new window when clicked to ensure uninterrupted experience on the site.
+
+![Footer](assets/images/footer.png)
+
 * **Game page**
 
     * Progress section
     * Question and answers area
     * Game over modal
-
-* **Footer**
 
 ### Features to be implemented in the future
 
