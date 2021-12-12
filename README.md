@@ -2,6 +2,7 @@
 
 1. [**Introduction**](#Introduction-&-Site-Purpose)
 2. [**User Experience (UX)**](#User-Experience-(UX))
+    * [Target audience](#Target-audience)
     * [User stories](#User-stories)
     * [Structure](#Structure)
     * [Design](#Design) 
@@ -47,3 +48,11 @@
 [Visit live page here](https://renatabiniek.github.io/moonlight-quiz/)
 
 <br>
+
+## Introduction & Site Purpose
+---
+
+### Fancy playing a literary moon quiz?
+<br>
+
+![Responsive Quiz Site](assets/images/responsive-site.png)
