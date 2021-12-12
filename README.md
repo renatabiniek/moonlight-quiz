@@ -30,7 +30,6 @@
     * [Validator Testing](#Validator-Testing)
     * [Lighthouse Testing](#Lighthouse-Testing)
     * [Further Testing](#Further-Testing)
-    * [Devices and browsers](#Devices-and-browsers)
     * [Issues and Bugs](#Issues-and-Bugs)
 
 7. [**Credits**](#Credits)
@@ -318,21 +317,54 @@ You can also refer to this [GitHub documentation](https://docs.github.com/en/git
 
 ### Testing Approach
 
-I tested the site regularly during the development process, by previewing it in the live server window and inspecting with Google Chrome DevTools and Console. Simultaneously, I was checking any new additions and changes on several devices available in my household. 
+I tested the site regularly during the development process, by previewing it in the live server window and inspecting with Google Chrome DevTools and Console. Simultaneously, I was checking any new additions and changes on several devices available in my household, such as a phone, tablet and laptop with several versions of browsers (Google Chrome, Firefox, Edge, Safari).
 Any issues found, were addressed at that stage and double checked before moving on with the rest of the project. 
 
 In the final stage of the project, I have tested the site thoroughly with automatic validators and manually on different devices and in several browsers, taking into account user stories from the UX section, as per below.
 
 ### User stories testing from the UX section
 
+* **As a player:**
+
+* I want to be able to play the quiz when I'm ready
+
+The quiz doesn't load automatically, it allows the user to pres the *Let's see!* button to initiate start
+
+* I want to be able to play the quiz on the go
+
+The game is repsonsive on different screens and devices
+
+* I want to for the quiz to be easy to navigate
+
+The navigation is intuitive and the user always has an option to return to the home page by pressing logo of the site
+
+* I want to see my progress and my score
+
+Scores and question count/ quesiton total are displayed above the questions & answers section at all times.
+Final score is also announced on the pop up end game modal.
+
 
 ### Validator Testing
 
+* **HTML Validator Errors & Warnings**
+* **CSS Validator Errors & Warnings:**
+
+
 ### Lighthouse Testing
+
+  **Desktop**
+  
+  **Mobile**
 
 ### Further Testing
 
-### Devices and browsers tested
+* **Color Contrast**
+
+    [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/)
+
+Result:
+
+    *No automated color contrast issues found on the webpage tested*
 
 ### Issues and Bugs
 
