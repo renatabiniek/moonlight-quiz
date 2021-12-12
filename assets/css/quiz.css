@@ -207,6 +207,11 @@
     .footer {
         font-size: 1rem;
     }
+
+    .end-modal {
+        width: auto;
+        height: auto;
+    }
 }
 
 /*on screens smaller than 365px*/
