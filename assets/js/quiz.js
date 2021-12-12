@@ -91,7 +91,9 @@ function setNewQuestion() {
         gameOver();
 
         //save current score to local storage
-        //localStorage.setItem('myScore', JSON.stringify(score.innerText));
+        rankNewScores();
+
+        displayScores();
 
         //stop showing new questions and show game over page
         return //window.location.assign('quiz-end.html');
@@ -244,14 +246,19 @@ const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");
 const myScore = localStorage.getItem("myScore");
 
+//when Save button clicked on game over modal current score is saved
+saveScoreBtn.addEventListener("click", rankNewScores());
+
 /**gets and ranks new scores in local storage */
 
-function rankNewScores () {
+function rankNewScores() {
+
     const currentScore = {
         name: playerName.value,
-        result: score.innerHTML,
+        result: score.innerHTML
     };
 
+    //gets what's already in the local storage or returns an empty array if nothing in local storage yet, e.g. on first game run
     const getHighScores = JSON.parse(localStorage.getItem("highScores")) || [];
     console.log(getHighScores);
 
@@ -267,8 +274,21 @@ function rankNewScores () {
 
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
-    console.log("rank new scores ran")
+    console.log("rankNewScores ran")
 };
 
-//when Save button clicked on game over modal current score is saved
-saveScoreBtn.addEventListener("click", rankNewScores());
+//display high scores from local storage and append to HTML
+
+function displayScores() {
+    const displayScores = document.getElementById("display-scores");
+    const getHighScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+    //code from https://www.youtube.com/watch?v=DFhmNLKwwGw
+    displayScores.innerHTML = getHighScores.map((currentScore) => {
+        return `<tr> 
+        <td>${currentScore.name}</td> 
+        <td>${currentScore.result}</td> 
+        </tr>`;    
+        }) 
+        .join(""); 
+};
