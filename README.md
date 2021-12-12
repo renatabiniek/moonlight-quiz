@@ -313,3 +313,28 @@ You can clone your repository to create a local copy on your computer. Any chang
 
 You can also refer to this [GitHub documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) for detailed instructions. 
 
+## Testing
+---
+
+### Testing Approach
+
+I tested the site regularly during the development process, by previewing it in the live server window and inspecting with Google Chrome DevTools and Console. Simultaneously, I was checking any new additions and changes on several devices available in my household. 
+Any issues found, were addressed at that stage and double checked before moving on with the rest of the project. 
+
+In the final stage of the project, I have tested the site thoroughly with automatic validators and manually on different devices and in several browsers, taking into account user stories from the UX section, as per below.
+
+### User stories testing from the UX section
+
+
+### Validator Testing
+
+### Lighthouse Testing
+
+### Further Testing
+
+### Devices and browsers tested
+
+### Issues and Bugs
+
+  * **Fixed**:
+  * **Known**:
