@@ -193,7 +193,7 @@
     }
 
     .progress-item {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .display-text {
@@ -203,6 +203,7 @@
     .icon-sml {
         font-size: 1rem;
     }
+
 }
 
 /*on screens smaller than 365px*/
@@ -219,8 +220,5 @@
     .progress-item {
         font-size: 1rem;
     }
-
-
-
 
 }

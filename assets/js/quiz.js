@@ -251,12 +251,12 @@ function rankNewScores() {
 
     const currentScore = {
         name: playerName.value,
-        result: score.innerHTML
+        result: score.innerText
     };
 
     //gets what's already in the local storage or returns an empty array if nothing in local storage yet, e.g. on first game run
     const getHighScores = JSON.parse(localStorage.getItem("highScores")) || [];
-    console.log(getHighScores);
+    console.log(currentScore);
 
     getHighScores.push(currentScore);
 
@@ -270,7 +270,7 @@ function rankNewScores() {
 
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
-    console.log("rankNewScores ran")
+    console.log(currentScore);
 };
 
 
