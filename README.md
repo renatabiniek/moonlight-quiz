@@ -2,6 +2,7 @@
 
 1. [**Introduction**](#Introduction-&-Site-Purpose)
 2. [**User Experience (UX)**](#User-Experience-(UX))
+    * [Project goals](#Project-goals)
     * [Target audience](#Target-audience)
     * [User stories](#User-stories)
     * [Structure](#Structure)
@@ -56,3 +57,39 @@
 <br>
 
 ![Responsive Quiz Site](assets/images/responsive-site.png)
+
+This interactive front-end site was built as part of my portfolio project JavaScript Essentials.
+
+It's a traditional interactive online quiz with a literary twist.
+Instead of a question, a quote about a moon is displayed, and the players are presented with multiple choices to guess the author of the quote.
+
+## User Experience (UX)
+---
+
+### Project goals
+
+* to build a functioning quiz using JavaScripts
+* to present a fun online quiz themed around the moon and quotes from (mainly) literature
+
+### Target audience for this website is:
+
+* People who enjoy a fun online quiz
+* Avid readers who want to test their knowledge and memory
+* Adults, or  well-read teenagers
+* Moon lovers
+
+### User stories:
+
+* **As a player:**
+
+* I want to be able to play the quiz when I'm ready
+* I want to be able to play the quiz on the go
+* I want to for the quiz to be easy to navigate
+* I want to see my progress and my score
+
+* **As site creator:**
+
+* I want to create a interactive online application based on JavaScript Essentials
+* I want to present the users an attractive, responsive site
+
+
