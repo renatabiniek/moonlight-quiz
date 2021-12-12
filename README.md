@@ -119,6 +119,12 @@ The colors used are:
 * dark blue - rgb(16, 46, 74) for modal backround
  
 The blues were derived from the background image colours using [Eye Dropper](https://eyedropper.org/).
+
+For correct/incorrect answer selections, I used standard
+
+* aquamarine (correct) - rgb(127, 255, 212) &
+* red (incorrect) - rgb(255, 0, 0)
+
 <br>
 
 * **Typography**
@@ -190,9 +196,37 @@ The link opens in a new window when clicked to ensure uninterrupted experience o
 
 * **Game page**
 
+Once the player decides to start the quiz, they are taken to the quiz page.
+This page has a very similar look and layout, and includes:
+
     * Progress section
+
+In this section, the user can see how many questions have been shown, how many are in the quiz round and what is their current round score.
+Each time a new question is displayed, the question number increases and a new glowing moon icon is added, to indicate progress in a way that ties in with the overall look of the site.
+
+![Progress section](assets/images/progress.png)
+
     * Question and answers area
+
+When a new question is displayed, the user is presented with 4 possible options. 
+
+![Quiz](assets/images/quiz.png)
+
+When correct option is selected, the answer button turns red.
+When the answer is incorrect, it becomes aquamarine blue.
+
+Correct answer:
+![Correct answer](assets/images/correct.png)
+
+Incorrect answer:
+![Incorrect answer](assets/images/incorrect.png)
+
+The questions and selected answer is then displayed for 2.5 seconds to allow the player consider the choice.
+
     * Game over modal
+
+Once last question is displayed, a game over modal pops up to inform the user that the quiz has finished.
+The final score of the round is displayed.
 
 ### Features to be implemented in the future
 
