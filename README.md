@@ -394,5 +394,30 @@ This was again my own erorr and was resolved with toggle visibitlity from w3scho
 
 * I experimented with the saving and getting scores and usernames to local storage but the values are not getting submitted correctly. I spent a lot of time reading and watching various tutorials but unfortunately I ran out of time to fix this.
 
+### Credits
+---
+
+#### Code
+
+I found JavaScript concepts extremely difficult to put in practice on my own project, so I used a lot of help in form of tutorials, articles and other projects.
+
+Credits are due to:
+
+* Video tutorials of [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=3196s) and [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) helped me massively with the building blocks of a quiz game
+
+* The Code Institute materials with the support of tutorial materials on [w3schools](https://www.w3schools.com/), [MDN Web Docs](https://developer.mozilla.org/en-US/) and posts on [stackoverflow](https://stackoverflow.com/) were used to create this site. 
+
+* I reviewed similar projects of my fellow students for reference to better understand the practical use of JS concepts for this concept [zokam1411]https://github.com/zokam1411/milestone-project-2 and [roomacarthur]https://github.com/roomacarthur/the-tipsy-quiz
+
+* [This blog post](https://chris.beams.io/posts/git-commit/) was used for recommendation on best format of git commit messages
+
+#### Images 
+
+Background image was sourced from [Unsplash](https://unsplash.com/photos/Ef6iL87-vOA)
+
+#### Content
+
+Quotes were sourced from [Goodreads](https://www.goodreads.com/quotes/tag/moon)
+
 
 
