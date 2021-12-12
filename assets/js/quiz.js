@@ -1,6 +1,7 @@
 // wait for the DOM content to load
 document.addEventListener("DOMContentLoaded", function () {
     startQuiz();
+    console.log("loaded")
 })
 
 // define list of questions and answers
@@ -38,7 +39,7 @@ let quizQuestions = [{
         answer: '4',
     },
     {
-        question: 'Tape the sound of the moon fading at dawn. Give it to your mother to listen to when she’s in sorrow.',
+        question: "Tape the sound of the moon fading at dawn. Give it to your mother to listen to when she’s in sorrow.",
         option1: 'John Lennon',
         option2: 'Sylvia Plath',
         option3: 'Yoko Ono',
@@ -54,6 +55,8 @@ let quizQuestions = [{
         answer: '2',
     },
 ]
+
+
 
 // Get and declare constant elements from DOM
 

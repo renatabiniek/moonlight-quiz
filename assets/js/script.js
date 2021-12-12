@@ -1,7 +1,5 @@
 //modals
 
-
-
 let infomdl = document.getElementById("info-modal");
 let openifomdl = document.getElementById("open-btn");
 let closemdl = document.getElementById("close-btn");
