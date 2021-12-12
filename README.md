@@ -267,3 +267,49 @@ The project has been developed within a very limited time window and under added
 * [Word Counter](https://wordcounter.net/character-count) - to limit number of characters used for commit messages to 50, max 72 characters
 * [Online-Spellcheck](https://www.online-spellcheck.com/) - to spellcheck the content of the site and README
 
+## Deployment
+---
+### Deploying to GitHub Pages
+
+The project was developed in GitPod, committed to Git and pushed to GitHub. 
+The site was deployed to GitHub Pages with the following steps:
+
+1. Login to GitHub
+2. Navigate to your site's repository, which for this project is renatabiniek/moonlight-quiz
+3. At the top of the repository, locate and click **Settings** 
+4. In the left-hand side panel, click **Pages**
+5. Under **Source**, click the dropdown called *None* and select *Branch: Master* and *Root* folder
+6. Click **Save**
+7. A notification message will show up that the page is getting ready to be published
+8. Once refreshed, the message will change to *Your site is published* and a link to the deployed site will be provided: 
+
+    The live site can be found here: https://renatabiniek.github.io/moonlight-quiz/
+
+The process can also be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+### Forking to GitHub Repository
+
+You can create a fork (copy) of the repository. This allows you to experiment with the code without affecting the original project.
+
+To fork the repository:
+
+1. Log in to your [GitHub](https://github.com/) account 
+2. On GitHub, navigate to the repository you want to fork
+3. In the top right corner of the page, underneath your profile avatar, click **Fork**
+4. You should now have a copy of the original repository in your GitHub account
+
+### Making a local clone
+
+You can clone your repository to create a local copy on your computer. Any changes made to the local copy will not affect the original project. To clone the **Moonlight Quiz** project, follow the steps below:
+
+1. Log in to your [GitHub](https://github.com/) account and locate the [Moonlight Quiz repository](https://github.com/renatabiniek/moonlight-quiz)
+2. In the repository, click on **Code** button located above all the project files
+3. Under HTTPS, copy the link generated (https://github.com/renatabiniek/moonlight-quiz.git)
+4. Open the terminal you're using, e.g. Gitpod
+5. Change the current working directory to the location where you want the cloned directory created
+6. Type ```git clone``` and then paste the URL you copied earlier:  
+```git clone https://github.com/renatabiniek/moonlight-quiz.git``` 
+7. Press **Enter** to create your local clone.
+
+You can also refer to this [GitHub documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) for detailed instructions. 
+
