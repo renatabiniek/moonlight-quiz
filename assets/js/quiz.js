@@ -91,7 +91,7 @@ function setNewQuestion() {
         gameOver();
 
         //stop showing new questions and show game over page
-        return //window.location.assign('quiz-end.html');
+        return
 
         //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
     }
