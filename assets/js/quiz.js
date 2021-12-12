@@ -245,12 +245,12 @@ const goHomeBtn = document.getElementById("go-home");
 
 //takes user back to quiz start
 playAgainBtn.addEventListener("click", function() {
-    return location.assign("../quiz.html")
+    return location.assign("./quiz.html")
 });
 
 
 goHomeBtn.addEventListener("click", function() {
-    return location.assign("../index.html")
+    return location.assign("./index.html")
 });
 
 //saving scores 
