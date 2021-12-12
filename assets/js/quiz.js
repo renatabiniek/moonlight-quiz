@@ -269,8 +269,8 @@ function rankNewScores() {
         return b.result - a.result;
     });
 
-    //only list 3 highest scores, remove others
-    getHighScores.splice(3);
+    //only save 10 highest scores
+    getHighScores.splice(10);
 
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
