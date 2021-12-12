@@ -199,19 +199,20 @@ The link opens in a new window when clicked to ensure uninterrupted experience o
 Once the player decides to start the quiz, they are taken to the quiz page.
 This page has a very similar look and layout, and includes:
 
-    * Progress section
+* Progress section
 
 In this section, the user can see how many questions have been shown, how many are in the quiz round and what is their current round score.
 Each time a new question is displayed, the question number increases and a new glowing moon icon is added, to indicate progress in a way that ties in with the overall look of the site.
 
 ![Progress section](assets/images/progress.png)
 
-    * Question and answers area
+* Question and answers area
 
 When a new question is displayed, the user is presented with 4 possible options. 
 
 ![Quiz](assets/images/quiz.png)
 
+Selected option increase slightly to stand out from the other choices.
 When correct option is selected, the answer button turns red.
 When the answer is incorrect, it becomes aquamarine blue.
 
@@ -223,7 +224,7 @@ Incorrect answer:
 
 The questions and selected answer is then displayed for 2.5 seconds to allow the player consider the choice.
 
-    * Game over modal
+* Game over modal
 
 Once last question is displayed, a game over modal pops up to inform the user that the quiz has finished.
 The final score of the round is displayed.
@@ -236,3 +237,33 @@ The project has been developed within a very limited time window and under added
 * add option to save current score and username to local storage
 * display top scores on the leader board
 * add more questions and shuffle the answers
+
+## Technologies used
+---
+
+### Languages
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, libraries and programs used
+
+* [Google Fonts](https://fonts.google.com/) - to import fonts into the HTML file which were then used throughout the site
+* [Font Awesome](https://fontawesome.com/) - to source icons which were added to the site for the purpose of aesthetics
+* [Eye Dropper](https://eyedropper.org/) - to pick specific colours from images 
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - to inspect and debug the code through all stages of the development
+* [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - to inspect the site for overflow 
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to audit the site for performance, accessibility, SEO and best practices
+* [Am I Responsive](http://ami.responsivedesign.is/) - to produce a preview of the site on different devices
+* [W3C HTML Validator](https://validator.w3.org/) - to validate HTML code
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - to validate CSS code
+* [JSHint Validator](https://jshint.com/) - to validate JavaScript code
+* [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/) - to test the contrast and readability of colours used 
+* [Autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes to CSS, for compatibility with different browsers
+* [GitHub](https://github.com/) - for hosting the project code and version control 
+* [Gitpod](https://gitpod.io/) - to write the code and push it to GitHub
+* [GitHub Pages](https://pages.github.com/) - to deploy the site 
+* [Word Counter](https://wordcounter.net/character-count) - to limit number of characters used for commit messages to 50, max 72 characters
+* [Online-Spellcheck](https://www.online-spellcheck.com/) - to spellcheck the content of the site and README
+
