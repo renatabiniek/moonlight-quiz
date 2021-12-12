@@ -206,6 +206,30 @@ footer>p {
     line-height: 2.2rem;
 }
 
+input[type="text"], input[type="email"] {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+#message {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: .5rem 0;
+    height: 10rem;
+}
+
+label {
+    font-size: 1rem;
+}
+
+#contact-btn {
+    font-size: 1.3rem;
+    width: auto;
+    padding: .5rem;
+}
 /*media queries*/
 /*on screens smaller than 700px, reduce the font size to keep logo and links on the same line*/
 
