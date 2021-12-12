@@ -68,7 +68,7 @@ Instead of a question, a quote about a moon is displayed, and the players are pr
 
 ### Project goals
 
-* to build a functioning quiz using JavaScripts
+* to build a functioning quiz using JavaScript
 * to present a fun online quiz themed around the moon and quotes from (mainly) literature
 
 ### Target audience for this website is:
@@ -92,4 +92,12 @@ Instead of a question, a quote about a moon is displayed, and the players are pr
 * I want to create a interactive online application based on JavaScript Essentials
 * I want to present the users an attractive, responsive site
 
+### Structure:
+
+The user's journey begins on a minimal home page where they are presented with an option to read instructions on how to play the quiz or take action to start the game.
+The logo and highest priority elements that might be useful to the player are conventionally placed in a horizontal fashion at the top of the browser window. 
+For consistency of user experience, the site logo and footer are repeated on the the home page and quiz page. 
+
+The logo element allows the user to quickly navigate back to home page.
+The footer includes information about the site owner, including a link to the GitHub repository that opens in a new tab.
 
