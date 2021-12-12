@@ -225,7 +225,9 @@ The questions and selected answer is then displayed for 2.5 seconds to allow the
 * Game over modal
 
 Once last question is displayed, a game over modal pops up to inform the user that the quiz has finished.
-The final score of the round is displayed.
+The final score of the round is displayed. The players has an option to play the quiz again, go back to the home page or close the modal.
+
+![Game over](assets/images/end-actions.png)
 
 ### Features to be implemented in the future
 
