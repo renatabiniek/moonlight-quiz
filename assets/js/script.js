@@ -23,3 +23,23 @@ window.onclick = function (event) {
       infomdl.style.display = "none";
    }
 };
+
+//contact form modal
+
+//prevent submit by default and return a thank you message 
+
+function getContactDetails(event) {
+   event.preventDefault ();
+   let contactName = document.getElementById("contactname");
+   let email = document.getElementById("email");
+
+   let inputContactName = contactName.value;
+   let inputEmail = email.value;
+
+   let message = `Thank you for your message, ${inputContactName}! We'll get back to you at ${inputEmail} shortly!`
+
+   document.getElementById("thank-you").innerHTML = message;
+}
+
+let sendForm = document.getElementById("contact-modal");
+sendForm.addEventListener("submit", getContactDetails);
