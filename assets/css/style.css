@@ -230,6 +230,13 @@ label {
     width: auto;
     padding: .5rem;
 }
+
+#thank-you {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
 /*media queries*/
 /*on screens smaller than 700px, reduce the font size to keep logo and links on the same line*/
 
