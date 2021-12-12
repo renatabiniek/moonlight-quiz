@@ -128,10 +128,19 @@ The blues were derived from the background image colours using [Eye Dropper](htt
 
 Two fonts were selected for this project:
 
-* 'Montserrat Alternates', sans-serif - for logo and intro elements, with sans-serif as a fallback font in case the original font family isn't imported correctly for some reason. The font design is fun but still very readable, I felt it aligned well with the theme of the quiz.
+* 'Montserrat Alternates', sans-serif - for logo and intro elements, with sans-serif as a fallback font in case the original font family isn't imported correctly for some reason. The font design is fun but still very readable, I felt it tied in well with the theme of the quiz.
 
-* 'Raleway', sans-serif -  for body text. The font is elegant, popular and clean, which ensure that questions and answers of the quiz will be easy to read.
+* 'Raleway', sans-serif - for body text. The font is elegant, popular and clean, which ensure that questions and answers of the quiz will be easy to read.
 Sans-serif is the fallback option.  
 
 <br> 
 
+* **Imagery**
+
+    Only one image was used for this project.
+    It's an image of a night sky that provides a themed backdrop for the quiz.
+    It was sourced from [Unsplash](https://unsplash.com/).
+    
+    Moon & star icons from [Font Awesome](https://fontawesome.com/) were used in logo, progress bar and on the high scores button to ensure a cohesive feel of the site.
+
+<br>
