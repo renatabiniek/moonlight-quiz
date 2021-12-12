@@ -90,11 +90,6 @@ function setNewQuestion() {
         //show game over modal 
         gameOver();
 
-        //save current score to local storage
-        rankNewScores();
-
-        displayScores();
-
         //stop showing new questions and show game over page
         return //window.location.assign('quiz-end.html');
 
@@ -246,8 +241,9 @@ const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");
 const myScore = localStorage.getItem("myScore");
 
+
 //when Save button clicked on game over modal current score is saved
-saveScoreBtn.addEventListener("click", rankNewScores());
+saveScoreBtn.addEventListener("click", rankNewScores(), displayScores());
 
 /**gets and ranks new scores in local storage */
 
@@ -276,6 +272,7 @@ function rankNewScores() {
 
     console.log("rankNewScores ran")
 };
+
 
 //display high scores from local storage and append to HTML
 
