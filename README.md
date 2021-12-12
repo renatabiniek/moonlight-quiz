@@ -39,7 +39,6 @@
    
 8. [**Acknowledgments**](#Acknowledgments)
 
-9. [**Disclaimer**](#Disclaimer)
 
 <br>
 
@@ -419,5 +418,10 @@ Background image was sourced from [Unsplash](https://unsplash.com/photos/Ef6iL87
 
 Quotes were sourced from [Goodreads](https://www.goodreads.com/quotes/tag/moon)
 
+### Acknowledgments
+---
+Massive thank you to:
 
-
+* The wonderfully helpful and friendly Slack community where I often looked for help
+* Tutors at Code Institute for their extended support 
+* My partner who took over running the houshold and let me work on this project
