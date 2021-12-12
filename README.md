@@ -121,3 +121,17 @@ The colors used are:
 The blues were derived from the background image colours using [Eye Dropper](https://eyedropper.org/).
 
 <br>
+
+* **Typography**
+
+    The fonts were sourced from [Google Fonts](https://fonts.google.com/)
+
+Two fonts were selected for this project:
+
+* 'Montserrat Alternates', sans-serif - for logo and intro elements, with sans-serif as a fallback font in case the original font family isn't imported correctly for some reason. The font design is fun but still very readable, I felt it aligned well with the theme of the quiz.
+
+* 'Raleway', sans-serif -  for body text. The font is elegant, popular and clean, which ensure that questions and answers of the quiz will be easy to read.
+Sans-serif is the fallback option.  
+
+<br> 
+
