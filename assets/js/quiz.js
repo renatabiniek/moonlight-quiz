@@ -64,7 +64,6 @@ const questionText = document.getElementById("moonq");
 
 // Create an array from the answers and store in a variable
 const options = Array.from(document.getElementsByClassName("answer-text"));
-console.log(options);
 
 const score = document.getElementById("score");
 let scoreValue = score.innerText;
@@ -81,9 +80,10 @@ let questionCount = 0;
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
 
-
+// modals
 const endOverlay = document.getElementById("overlay");
 const endModal = document.getElementById("end-modal");
+const modalBtn = document.getElementById("modal-btn");
 
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
@@ -95,8 +95,6 @@ function setNewQuestion() {
 
         //stop showing new questions and show game over page
         return
-
-        //https://developer.mozilla.org/en-US/docs/Web/API/Location/assign
     }
 
     questionCount++;
@@ -136,10 +134,12 @@ options.forEach(function (option) {
         selectionPossible = false;
 
         //stores info about the target that was clicked
+
         let selectedOption = event.target;
         console.log(selectedOption);
 
         //determines the reference of the data-choice on that target and stores it
+
         let userSelected = selectedOption.dataset.choice;
         console.log(userSelected);
         console.log(currentQuestion.answer);
@@ -220,8 +220,6 @@ function gameOver() {
 };
 
 //close game over modal when x close button is clicked
-
-const modalBtn = document.getElementById("modal-btn");
 
 modalBtn.addEventListener("click", function () {
     endOverlay.style.display = "none";
