@@ -144,3 +144,30 @@ Sans-serif is the fallback option.
     Moon & star icons from [Font Awesome](https://fontawesome.com/) were used in logo, progress bar and on the high scores button to ensure a cohesive feel of the site.
 
 <br>
+
+## Features
+---
+
+### Existing Features
+
+Exsting features include:
+
+* **Logo section**
+* **Home page with call to action**
+* **Game rules modal**
+* **Game page**
+
+    * Progress section
+    * Question and answers area
+    * Game over modal
+
+* **Footer**
+
+### Features to be implemented in the future
+
+The project has been developed within a very limited time window and under added pressure of personal circumstances, therefore it has a lot of potential for features to be implemented in the future.
+
+* contact form 
+* add option to save current score and username to local storage
+* display top scores on the leader board
+* add more questions and shuffle the answers
