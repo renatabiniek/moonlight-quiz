@@ -261,7 +261,7 @@ function rankNewScores() {
     getHighScores.push(currentScore);
 
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-    getHighScores.sort(function(a, b) {
+    getHighScores.sort(function (a, b) {
         return b.result - a.result;
     });
 
@@ -282,10 +282,10 @@ function displayScores() {
 
     //code from https://www.youtube.com/watch?v=DFhmNLKwwGw
     displayScores.innerHTML = getHighScores.map((currentScore) => {
-        return `<tr> 
+            return `<tr> 
         <td>${currentScore.name}</td> 
         <td>${currentScore.result}</td> 
-        </tr>`;    
-        }) 
-        .join(""); 
+        </tr>`;
+        })
+        .join("");
 };
