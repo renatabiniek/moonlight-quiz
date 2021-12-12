@@ -101,3 +101,23 @@ For consistency of user experience, the site logo and footer are repeated on the
 The logo element allows the user to quickly navigate back to home page.
 The footer includes information about the site owner, including a link to the GitHub repository that opens in a new tab.
 
+### Design:  
+
+* **Colour scheme**
+
+I wanted to make the page consistent with the mooon theme, so I decided on dark colour scheme, that would imitate the night sky.
+That also give the site an elegant, minimal look, and eliminates distractions for the user.
+
+The colors used are:
+
+* white - rgb(255, 255, 255) for text placed on the image background for best contrast
+
+* deep nightsky navy - rgb(15, 15, 48) for fallback background colour and text elements on buttons
+
+* shades of gold - for glow effect rgb(255,215,0) & (231, 225, 189)
+
+* dark blue - rgb(16, 46, 74) for modal backround
+ 
+The blues were derived from the background image colours using [Eye Dropper](https://eyedropper.org/).
+
+<br>
