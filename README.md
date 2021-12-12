@@ -353,7 +353,7 @@ Final score is also announced on the pop up end game modal.
 ### Lighthouse Testing
 
   **Desktop**
-  
+
   **Mobile**
 
 ### Further Testing
@@ -368,5 +368,31 @@ Result:
 
 ### Issues and Bugs
 
+Developing this JavaScript project has been a steep learning curve for me and I was faced with many challenges of general use of the language during the process, which has been an impediment to the completing all the features I intended to. 
+
   * **Fixed**:
+
+* It was possible to select further options after selecting an answer. 
+This was resolved by adding selectionPossible = true to various steps of the quiz, changing it to false when the click event occured and returning the function when selectionPossible = false;
+
+* The questions continued to display even after max number of questions was reached
+
+![Incorrect number of questions](assets/images/bug1.png)
+
+This was fixed by adding an if condition to return (stop running) the setNewQuestion function once the max. number of questions has been reached.
+
+* Score was being added but not as numbers but strings (0 + 20 + 20 = 02020). It was due to me incorrectly using innerText in the incrementScore() function, rather than numbers. 
+
+* Moon icons were being shown all at once, rather than one by one with each new question.
+This was again my own erorr and was resolved with toggle visibitlity from w3schools.
+
+* Error 404 page showed when I deployed the page in GitHub. This was due to an absolute file path that I used. It was fixed when I changed it to relative.
+
   * **Known**:
+
+* Not a bug, but I realised late in the project that having multiple files isn't as helpful as I thought it would be. Instead of helping me separate specific aspects of the project, it made it more difficult to refer to specific values and elements. This will be corrected in the future.
+
+* I experimented with the saving and getting scores and usernames to local storage but the values are not getting submitted correctly. I spent a lot of time reading and watching various tutorials but unfortunately I ran out of time to fix this.
+
+
+
