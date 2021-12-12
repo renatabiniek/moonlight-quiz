@@ -85,6 +85,10 @@ const endOverlay = document.getElementById("overlay");
 const endModal = document.getElementById("end-modal");
 const modalBtn = document.getElementById("modal-btn");
 
+//end game actions
+const playAgainBtn = document.getElementById("play-again");
+const goHomeBtn = document.getElementById("go-home");
+
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
 
@@ -235,11 +239,6 @@ window.onclick = function (event) {
         endModal.style.display = "none";
     }
 };
-
-//end game actions
-
-const playAgainBtn = document.getElementById("play-again");
-const goHomeBtn = document.getElementById("go-home");
 
 //takes user back to quiz start
 playAgainBtn.addEventListener("click", function() {

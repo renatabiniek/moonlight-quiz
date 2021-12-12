@@ -1,26 +1,23 @@
-//modals
+//main navigation info modal
 
-let infomdl = document.getElementById("info-modal");
-let openifomdl = document.getElementById("open-btn");
-let closemdl = document.getElementById("close-btn");
+const infomdl = document.getElementById("info-modal");
+const openifomdl = document.getElementById("open-btn");
+const closemdl = document.getElementById("close-btn");
 
-/**
- * modal with info about the quiz opens on click ? icon 
- */
+//modal with info about the quiz opens on click ? icon 
+
 openifomdl.addEventListener("click", function () {
    infomdl.style.display = "block";
 });
 
-/**
- * close modal when x close button is clicked
- */
+//close modal when x close button is clicked
+
 closemdl.addEventListener("click", function () {
    infomdl.style.display = "none";
 });
 
-/**
- * close modal when clicked anywhere on window
- */
+//close modal when clicked anywhere on window
+
 window.onclick = function (event) {
    if (event.target == infomdl) {
       infomdl.style.display = "none";
