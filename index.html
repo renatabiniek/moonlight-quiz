@@ -30,14 +30,14 @@
 
             <!--navbar links-->
             <ul class="nav-icons">
-                <li><i class="far fa-envelope glow"></i></li>
+                <li><i id="open-contact" class="far fa-envelope glow"></i></li>
                 <li><i id="open-btn" class="fas fa-question glow"></i></li>
             </ul>
         </nav>
 
         <!--info modal that opens when "?" is clicked-->
         <div class="modal" id="info-modal">
-            <div class="modal-conent">
+            <div class="modal-content">
                 <button class="close-modal" id="close-btn">&times;</button>
                 <h3 class="modal-header">How to start?</h3>
                 <ol>
@@ -49,26 +49,32 @@
         </div>
 
         <!--contact modal that opens when envelope icon is clicked-->
-        <form class="" id="contact-modal" method="POST" action="https://formdump.codeinstitute.net/">
-            <div>
+        <div class="modal" id="contact-modal">
+            <form class="modal-content" id="contact-modal" method="POST" action="https://formdump.codeinstitute.net/">
                 <div>
-                    <label for="contactname">What's your name?</label></br>
-                    <input type="text" id="contactname" name="contactname" placeholder="Enter your name" required>
+                    <div>
+                        <button class="close-modal" id="close-contact">&times;</button>
+                    </div>
+                    <div>
+                        <label for="contactname">What's your name?</label></br>
+                        <input type="text" id="contactname" name="contactname" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label></br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label for="message">Send us a message:</label></br>
+                        <textarea id="message" placeholder="Write something..." required></textarea>
+                    </div>
                 </div>
                 <div>
-                    <label for="email">Email:</label></br>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input class="btn" id="contact-btn" type="submit" value="Send" />
                 </div>
-                <div>
-                    <label for="message">Send us a message:</label></br>
-                    <textarea id="message" placeholder="Write something..." required></textarea>
-                </div>
-            </div>
-            <div>
-                <input class="btn" id="contact-btn" type="submit" value="Send"/>
-            </div>
-            <div id="thank-you"></div>
-        </form>
+                <div id="thank-you"></div>
+            </form>
+        </div>
+
 
         <!--MAIN QUIZ INTRO SECTION-->
 
@@ -78,7 +84,8 @@
 
             <!--buttons to take users to the quiz or the leaderboard-->
             <a href="quiz.html" class="btn" id="start-btn" aria-label="Click to start the quiz">Let's see!</a>
-            <a href="#" class="btn" id="winners-btn" aria-label="Click to see high scores board">Moon Experts <i class="fas fa-star icon-sml"></i></a>
+            <a href="#" class="btn" id="winners-btn" aria-label="Click to see high scores board">Moon Experts <i
+                    class="fas fa-star icon-sml"></i></a>
         </div>
 
         <!--FOOTER-->

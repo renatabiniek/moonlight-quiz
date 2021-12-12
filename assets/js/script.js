@@ -45,3 +45,23 @@ function getContactDetails(event) {
 
 let sendForm = document.getElementById("contact-modal");
 sendForm.addEventListener("submit", getContactDetails);
+
+//main navigation contact form modal
+
+const contactModal = document.getElementById("contact-modal");
+const openContact = document.getElementById("open-contact");
+const closeContact = document.getElementById("close-contact");
+
+//modal with the contact form opens on click on envelope icon 
+
+openContact.addEventListener("click", function () {
+   contactModal.style.display = "block";
+});
+
+//close modal when x close button is clicked
+
+closeContact.addEventListener("click", function () {
+   contactModal.style.display = "none";
+});
+
+
