@@ -212,10 +212,19 @@
         width: auto;
         height: auto;
     }
+    
+    .modal-conent {
+        width: auto;
+    }
 }
 
 /*on screens smaller than 365px*/
 @media screen and (max-width: 365px) {
+
+    .intro {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
 
     .question {
         font-size: 1rem;
