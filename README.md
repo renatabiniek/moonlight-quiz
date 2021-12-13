@@ -360,6 +360,12 @@ Final score is also announced on the pop up end game modal.
 * **CSS Validator Errors & Warnings:**
 
 
+* **JSHint Validator:**
+
+No errors but multiple warnings about missing or unnecessary semicolons received.
+All fixed.
+
+
 ### Lighthouse Testing
 
 I ran the Lighthouse tests in incognito mode as some Chrome extensions were negatively impacting the results.

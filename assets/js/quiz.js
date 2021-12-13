@@ -1,8 +1,8 @@
 // wait for the DOM content to load
 document.addEventListener("DOMContentLoaded", function () {
     startQuiz();
-    console.log("loaded")
-})
+    console.log("loaded");
+});
 
 // define list of questions and answers
 
@@ -54,9 +54,7 @@ let quizQuestions = [{
         option4: 'Neil Armstrong',
         answer: '2',
     },
-]
-
-
+];
 
 // Get and declare constant elements from DOM
 
@@ -98,7 +96,7 @@ function setNewQuestion() {
         gameOver();
 
         //stop showing new questions and show game over page
-        return
+        return;
     }
 
     questionCount++;
@@ -119,7 +117,7 @@ function setNewQuestion() {
     options.forEach(function (option) {
         const number = option.dataset.choice;
         option.innerText = currentQuestion['option' + number];
-    })
+    });
 
     //remove used question from the available questions list at the random question index
     availableQuestions.splice(randomQIndex, 1);
@@ -159,7 +157,7 @@ options.forEach(function (option) {
 
         if (classToAdd === "correct-answer") {
             incrementScore(correctAnswPoints);
-        };
+        }
 
         //remove class color after 2.5 seconds
 
@@ -171,8 +169,8 @@ options.forEach(function (option) {
 
             //get another random question
             setNewQuestion();
-        };
-    })
+        }
+    });
 });
 
 /**start the quiz */
@@ -181,18 +179,18 @@ function startQuiz() {
     initialScore = 0;
     questionCount = 0;
     setNewQuestion();
-};
+}
 
 /**increment score */
 function incrementScore() {
     let total = parseInt(score.innerText) + correctAnswPoints;
     score.innerText = total;
-};
+}
 
 /**update progress with current question number and total number of question */
 function updateQCount() {
     document.getElementById("progress-text").innerText = `Question ${questionCount} of ${maxNumberOfQuestions}`;
-};
+}
 
 /**update progress bar */
 function showProgress() {
@@ -213,15 +211,15 @@ function showProgress() {
         q4.style.visibility = "visible";
     } else if (questionCount === 5) {
         q5.style.visibility = "visible";
-    };
-};
+    }
+}
 
 /**show end modal */
 function gameOver() {
     endOverlay.style.display = "block";
     endModal.style.display = "block";
     finalScore.innerText = score.innerText;
-};
+}
 
 //close game over modal when x close button is clicked
 
@@ -241,13 +239,13 @@ window.onclick = function (event) {
 };
 
 //takes user back to quiz start
-playAgainBtn.addEventListener("click", function() {
-    return location.assign("./quiz.html")
+playAgainBtn.addEventListener("click", function () {
+    return location.assign("./quiz.html");
 });
 
 
-goHomeBtn.addEventListener("click", function() {
-    return location.assign("./index.html")
+goHomeBtn.addEventListener("click", function () {
+    return location.assign("./index.html");
 });
 
 //saving scores 
@@ -286,7 +284,7 @@ function rankNewScores() {
     localStorage.setItem("highScores", JSON.stringify(getHighScores));
 
     console.log(currentScore);
-};
+}
 
 
 //display high scores from local storage and append to HTML
@@ -303,4 +301,4 @@ function displayScores() {
         </tr>`;
         })
         .join("");
-};
+}
