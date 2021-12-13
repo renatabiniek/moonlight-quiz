@@ -29,7 +29,7 @@ window.onclick = function (event) {
 //prevent submit by default and return a thank you message 
 
 function getContactDetails(event) {
-   event.preventDefault ();
+   event.preventDefault();
    let contactName = document.getElementById("contactname");
    let email = document.getElementById("email");
 
@@ -39,12 +39,11 @@ function getContactDetails(event) {
    let message = `Thank you for your message, ${inputContactName}!</br>We'll get back to you at ${inputEmail} shortly!`
 
    document.getElementById("thank-you").innerHTML = message;
-   //reset form inputs after message is printed
-   document.getElementById("contact-modal").reset();
 }
 
-let sendForm = document.getElementById("contact-modal");
+let sendForm = document.getElementById("contact-form");
 sendForm.addEventListener("submit", getContactDetails);
+
 
 //main navigation contact form modal
 
@@ -63,5 +62,3 @@ openContact.addEventListener("click", function () {
 closeContact.addEventListener("click", function () {
    contactModal.style.display = "none";
 });
-
-
