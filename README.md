@@ -469,8 +469,8 @@ Quotes were sourced from [Goodreads](https://www.goodreads.com/quotes/tag/moon)
 ---
 Massive thank you to:
 
-* The wonderfully helpful and friendly Slack community where I often looked for help
-* Tutors at Code Institute for their extended support 
+* My mentor Guido Cecilio for the support and feedback 
+* Tutors at Code Institute 
 * My partner who took over running the household and let me work on this project
 
 [BACK TO TOP](#Table-of-Contents)
