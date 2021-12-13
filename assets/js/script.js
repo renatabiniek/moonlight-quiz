@@ -36,7 +36,7 @@ function getContactDetails(event) {
    let inputContactName = contactName.value;
    let inputEmail = email.value;
 
-   let message = `Thank you for your message, ${inputContactName}!</br>We'll get back to you at ${inputEmail} shortly!`;
+   let message = `Thank you for your message, ${inputContactName}!<br>We'll get back to you at ${inputEmail} shortly!`;
 
    document.getElementById("thank-you").innerHTML = message;
    resetForm();
