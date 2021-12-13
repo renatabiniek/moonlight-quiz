@@ -362,9 +362,16 @@ Final score is also announced on the pop up end game modal.
 
 ### Lighthouse Testing
 
+I ran the Lighthouse tests in incognito mode as some Chrome extensions were negatively impacting the results.
+All tests came back with good results:
+
   **Desktop**
 
+  ![Desktop report](assets/images/desktop.png)
+
   **Mobile**
+
+  ![Mobile report](assets/images/mobile.png)
 
 ### Further Testing
 
