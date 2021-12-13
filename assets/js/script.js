@@ -39,10 +39,17 @@ function getContactDetails(event) {
    let message = `Thank you for your message, ${inputContactName}!</br>We'll get back to you at ${inputEmail} shortly!`
 
    document.getElementById("thank-you").innerHTML = message;
+   resetForm();
 }
 
 let sendForm = document.getElementById("contact-form");
 sendForm.addEventListener("submit", getContactDetails);
+
+
+function resetForm() {
+   sendForm.reset();
+};
+
 
 
 //main navigation contact form modal
@@ -61,4 +68,5 @@ openContact.addEventListener("click", function () {
 
 closeContact.addEventListener("click", function () {
    contactModal.style.display = "none";
+   document.getElementById("thank-you").innerHTML = '';
 });
