@@ -194,6 +194,14 @@
     width: auto;
 }
 
+.hidden {
+    visibility: hidden;   
+}
+
+.visible {
+    visibility: visible;
+}
+
 
 /*media queries*/
 /*on screens smaller than 700px*/
