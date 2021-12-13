@@ -1,7 +1,6 @@
 // wait for the DOM content to load
 document.addEventListener("DOMContentLoaded", function () {
     startQuiz();
-    console.log("loaded");
 });
 
 // define list of questions and answers as an array of objects
@@ -112,7 +111,6 @@ function setNewQuestion() {
     //get a random question from quizQuestions and write back to DOM
 
     const randomQIndex = Math.floor(Math.random() * availableQuestions.length);
-    console.log(randomQIndex);
     currentQuestion = availableQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
 
@@ -125,7 +123,6 @@ function setNewQuestion() {
 
     //remove used question from the available questions list at the random question index
     availableQuestions.splice(randomQIndex, 1);
-    console.log(availableQuestions);
 
     selectionPossible = true;
 }
@@ -134,7 +131,6 @@ function setNewQuestion() {
 
 options.forEach(function (option) {
     option.addEventListener('click', function highlightCorrect(event) {
-        console.log("answer button clicked");
 
         if (!selectionPossible) return;
 
@@ -143,18 +139,15 @@ options.forEach(function (option) {
         //stores info about the target that was clicked
 
         let selectedOption = event.target;
-        console.log(selectedOption);
 
         //determines the reference of the data-choice on that target and stores it
 
         let userSelected = selectedOption.dataset.choice;
-        console.log(userSelected);
-        console.log(currentQuestion.answer);
 
         //compare user's choice and correct answer to the current question and add a class correct/incorrect-answer depending on the result to change the color
 
         let classToAdd = userSelected == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
-        console.log(classToAdd);
+
         selectedOption.parentElement.classList.add(classToAdd);
         selectedOption.parentElement.classList.add("selected");
 
@@ -180,7 +173,6 @@ options.forEach(function (option) {
 
 /**start the quiz */
 function startQuiz() {
-    console.log('quiz started');
     initialScore = 0;
     questionCount = 0;
     setNewQuestion();
