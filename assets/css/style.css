@@ -237,6 +237,12 @@ label {
     font-weight: bold;
 }
 
+.form-style {
+    width: 300px;
+    margin: auto;
+}
+
+
 /*media queries*/
 /*on screens smaller than 700px, reduce the font size to keep logo and links on the same line*/
 
@@ -266,6 +272,28 @@ label {
 
     .btn {
         font-size: 1.8rem;
+    }
+
+    .form-style {
+        width: 200px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 1rem;
+        padding: .2rem;
+        margin: .5rem 0;
+        width: 200px;
+    }
+
+    #message {
+        font-size: 1rem;
+        padding: .2rem;
+        margin: .5rem 0;
+        width: 200px;
+    }
+
+    .modal-content {
+        width: 80%;
     }
 }
 
