@@ -84,6 +84,7 @@ Instead of a question, a quote about a moon is displayed, and the players are pr
 * I want to be able to play the quiz on the go
 * I want to for the quiz to be easy to navigate
 * I want to see my progress and my score
+* I want to be able to contact the site owner with my feedback
 
 * **As site creator:**
 
@@ -352,6 +353,10 @@ The navigation is intuitive and the user always has an option to return to the h
 
 Scores and question count/ quesiton total are displayed above the questions & answers section at all times.
 Final score is also announced on the pop up end game modal.
+
+* I want to be able to contact the site owner with my feedback
+
+A simple contact form is easily available in the main navigation menu. A thank you message printed back to the user confirms that the query was received.
 
 
 ### Validator Testing
