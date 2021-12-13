@@ -356,7 +356,7 @@ Final score is also announced on the pop up end game modal.
 
 ### Validator Testing
 
-* **HTML Validator Errors & Warnings**
+* **HTML Validator**
 
 I ran both html files through the validator, and found following errors and warning:
 
@@ -370,8 +370,11 @@ I ran both html files through the validator, and found following errors and warn
 
 Errors and warnings have been fixed, but I left the choice of the h1 element for my logo.
 
-* **CSS Validator Errors & Warnings:**
+* **CSS Validator:**
 
+No errors found in CSS.
+
+  ![CSS validation](assets/images/css-validator.png)
 
 * **JSHint Validator:**
 
