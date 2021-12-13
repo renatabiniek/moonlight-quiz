@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("loaded");
 });
 
-// define list of questions and answers
+// define list of questions and answers as an array of objects
 
 let quizQuestions = [{
         question: "Don't tell me the moon is shining; show me the glint of light on broken glass.",
@@ -56,11 +56,11 @@ let quizQuestions = [{
     },
 ];
 
-// Get and declare constant elements from DOM
+// get and declare constant elements from DOM
 
 const questionText = document.getElementById("moonq");
 
-// Create an array from the answers and store in a variable
+// create an array from the answers and store in a variable
 const options = Array.from(document.getElementsByClassName("answer-text"));
 
 const score = document.getElementById("score");
@@ -74,7 +74,7 @@ let initialScore = 0;
 let questionCount = 0;
 
 
-// Set max. number of questions and score per correct answer for the quiz
+// set max. number of questions and score per correct answer for the quiz
 const maxNumberOfQuestions = 5;
 const correctAnswPoints = 20;
 
@@ -83,9 +83,11 @@ const endOverlay = document.getElementById("overlay");
 const endModal = document.getElementById("end-modal");
 const modalBtn = document.getElementById("modal-btn");
 
-//end game actions
+// end game actions
 const playAgainBtn = document.getElementById("play-again");
 const goHomeBtn = document.getElementById("go-home");
+
+// for this part of the code I refered to video tutorials by Brian Design and Web Dev Simplified, and adapted the code to my needs. It is mentioned in the README as well
 
 /**display a random question from quizQuestions*/
 function setNewQuestion() {
@@ -101,16 +103,18 @@ function setNewQuestion() {
 
     questionCount++;
 
+    // update question count and progress
+
     updateQCount();
     showProgress();
 
 
     //get a random question from quizQuestions and write back to DOM
+
     const randomQIndex = Math.floor(Math.random() * availableQuestions.length);
     console.log(randomQIndex);
     currentQuestion = availableQuestions[randomQIndex];
     questionText.innerText = currentQuestion.question;
-
 
     //keep track of selected option and write option to DOM 
 
@@ -127,6 +131,7 @@ function setNewQuestion() {
 }
 
 //loop through all options and add event listener for a click and store which option was selected by the user
+
 options.forEach(function (option) {
     option.addEventListener('click', function highlightCorrect(event) {
         console.log("answer button clicked");
@@ -200,6 +205,7 @@ function showProgress() {
     const q4 = document.getElementById("q4");
     const q5 = document.getElementById("q5");
 
+// toggle visibility of the progress icons 
 
     if (questionCount === 1) {
         q1.style.visibility = "visible";
@@ -248,7 +254,7 @@ goHomeBtn.addEventListener("click", function () {
     return location.assign("./index.html");
 });
 
-//saving scores 
+//saving scores - all code below to be removed
 
 const saveScoreBtn = document.getElementById("save-btn");
 const playerName = document.getElementById("username");

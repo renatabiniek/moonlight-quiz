@@ -251,6 +251,8 @@ footer>p {
     line-height: 2.2rem;
 }
 
+/*contact form*/
+
 input[type="text"], input[type="email"] {
     border-radius: 5px;
     font-size: 1.2rem;

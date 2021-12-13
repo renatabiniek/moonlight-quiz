@@ -1,26 +1,26 @@
 //main navigation info modal
 
-const infomdl = document.getElementById("info-modal");
-const openifomdl = document.getElementById("open-btn");
-const closemdl = document.getElementById("close-btn");
+const infoMdl = document.getElementById("info-modal");
+const openInfomdl = document.getElementById("open-btn");
+const closeMdl = document.getElementById("close-btn");
 
 //modal with info about the quiz opens on click ? icon 
 
-openifomdl.addEventListener("click", function () {
-   infomdl.style.display = "block";
+openInfomdl.addEventListener("click", function () {
+   infoMdl.style.display = "block";
 });
 
 //close modal when x close button is clicked
 
-closemdl.addEventListener("click", function () {
-   infomdl.style.display = "none";
+closeMdl.addEventListener("click", function () {
+   infoMdl.style.display = "none";
 });
 
 //close modal when clicked anywhere on window
 
 window.onclick = function (event) {
-   if (event.target == infomdl) {
-      infomdl.style.display = "none";
+   if (event.target == infoMdl) {
+      infoMdl.style.display = "none";
    }
 };
 
@@ -42,10 +42,12 @@ function getContactDetails(event) {
    resetForm();
 }
 
+//listen for a submit event and get contact details from the form
+
 let sendForm = document.getElementById("contact-form");
 sendForm.addEventListener("submit", getContactDetails);
 
-
+//clear the form inputs
 function resetForm() {
    sendForm.reset();
 }
