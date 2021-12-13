@@ -222,8 +222,8 @@ When a new question is displayed, the user is presented with 4 possible options.
 ![Quiz](assets/images/quiz.png)
 
 Selected option increase slightly to stand out from the other choices.
-When correct option is selected, the answer button turns red.
-When the answer is incorrect, it becomes aquamarine blue.
+When correct option is selected, the answer button becomes aquamarine blue.
+When the answer is incorrect, it turns red.
 
 Correct answer:
 ![Correct answer](assets/images/correct.png)
@@ -231,7 +231,7 @@ Correct answer:
 Incorrect answer:
 ![Incorrect answer](assets/images/incorrect.png)
 
-The questions and selected answer is then displayed for 2.5 seconds to allow the player consider the choice.
+The questions and selected answer is then displayed for 2.5 seconds to allow the player to consider their choice.
 
 * Game over modal
 
@@ -243,6 +243,8 @@ The final score of the round is displayed. The players has an option to play the
 ### Features to be implemented in the future
 
 The project has been developed within a very limited time window and under added pressure of personal circumstances, therefore it has a lot of potential for features to be implemented in the future.
+
+They will include:
 
 * add option to save current score and username to local storage
 * display top scores on the leader board
@@ -343,7 +345,7 @@ The quiz doesn't load automatically, it allows the user to pres the *Let's see!*
 
 * I want to be able to play the quiz on the go
 
-The game is repsonsive on different screens and devices
+The game is responsive on different screens and devices
 
 * I want to for the quiz to be easy to navigate
 
@@ -451,7 +453,7 @@ Credits are due to:
 
 * The Code Institute materials with the support of tutorial materials on [w3schools](https://www.w3schools.com/), [MDN Web Docs](https://developer.mozilla.org/en-US/) and posts on [stackoverflow](https://stackoverflow.com/) were used to create this site. 
 
-* I reviewed similar projects of my fellow students for reference to better understand the practical use of JS concepts for this concept [zokam1411](https://github.com/zokam1411/milestone-project-2) and [roomacarthur](https://github.com/roomacarthur/the-tipsy-quiz)
+* I reviewed similar projects of my fellow students for reference to better understand the practical use of JS concepts for this project [zokam1411](https://github.com/zokam1411/milestone-project-2) and [roomacarthur](https://github.com/roomacarthur/the-tipsy-quiz)
 
 * [This blog post](https://chris.beams.io/posts/git-commit/) was used for recommendation on best format of git commit messages
 
