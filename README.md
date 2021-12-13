@@ -175,6 +175,16 @@ Modal opens when user clicks the **?** icon. It can be closed with **X** icon in
 
 ![Modal](assets/images/info-modal.png)
 
+Another modal with a contact form opens when user clicks the envelope icon. It can be closed with **X** icon inside the modal.
+The form inputs are set as required and validate the email format on input.
+
+![Contact form](assets/images/contact-form.png)
+
+Once message is submitted, a thank you message is displayed for the user and form input text is cleared.
+
+![Thank you message](assets/images/thank-you.png)
+
+
 * **Home page with call to action**
 
 On the home page, the user can start the quiz by pressing the **Let's see!** button.
@@ -233,7 +243,6 @@ The final score of the round is displayed. The players has an option to play the
 
 The project has been developed within a very limited time window and under added pressure of personal circumstances, therefore it has a lot of potential for features to be implemented in the future.
 
-* contact form 
 * add option to save current score and username to local storage
 * display top scores on the leader board
 * add more questions and shuffle the answers
