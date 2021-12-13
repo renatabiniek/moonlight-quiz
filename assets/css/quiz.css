@@ -1,9 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*section with progress display*/
 
 #quiz-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
     width: 75%;
     height: 5rem;
@@ -45,12 +59,15 @@
 .q-count {
     display: inline;
     visibility: hidden;
-    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
 }
 
 /*container with individual answer for the user to choose from*/
 
 .answer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: rgba(255, 255, 255, 0.9);
     color: rgb(15, 15, 48);
@@ -61,12 +78,15 @@
     margin: 1rem auto;
     width: 100%;
     max-width: 50rem;
-    box-shadow: 1px 1px 5px rgb(231, 225, 189);
+    -webkit-box-shadow: 1px 1px 5px rgb(231, 225, 189);
+            box-shadow: 1px 1px 5px rgb(231, 225, 189);
 }
 
 /*class to be applied with JS when option is selected*/
 .selected {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 .correct-answer {
@@ -92,7 +112,9 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 99;
 
     background-color: rgb(16, 46, 74);
@@ -105,9 +127,15 @@
 }
 
 .modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1rem;
     font-size: 2em;
 }
@@ -119,7 +147,9 @@
 }
 
 .cls-modal:hover {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+            transform: scale(1.4);
 }
 
 .modal-form {
